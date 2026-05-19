@@ -86,9 +86,15 @@ char CalibDirName[200] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/"
     "CalibrationRunByRunv01";
 
+// char outdirGainCorrected[200] =
+//     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/"
+//     "v01GainCorrected/";
+
+// I will not correct the gain
 char outdirGainCorrected[200] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/"
-    "v01GainCorrected/";
+    "v01/";
+
 char CalibDirNameGainCorrected[200] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/"
     "CalibrationRunByRunGainCorrectedv01";
