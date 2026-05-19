@@ -63,84 +63,84 @@ no se ha tenido en cuenta.
 //   ---------------------------- Plots01 --------------------------------
 
 string Direction2DHisto =
-    "../DatosEnDiscoDuro/2DHistos/v02GainCorrectedMerge/Histos01_";
+    "../DatosEnDiscoDuro/2DHistos/v01GainCorrectedMerge/Histos01_";
 
-// string Direction2DHisto = "../DatosEnDiscoDuro/2DHistos/v02Merge/Histos01_";
+// string Direction2DHisto = "../DatosEnDiscoDuro/2DHistos/v01Merge/Histos01_";
 //
-string DirectionSave2DHisto = "../DatosEnDiscoDuro/ResultsPlot2DHisto/v02";
+string DirectionSave2DHisto = "../DatosEnDiscoDuro/ResultsPlot2DHisto/v01";
 string DirectionSave2DHistoCONDOR =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/ResultsPlot2DHisto/v02";
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/ResultsPlot2DHisto/v01";
 
 string SaveYieldFolder =
     "../DatosEnDiscoDuro/Yield/"
-    "v02";
+    "v01";
 string WFFile =
     "/home/victor93/ExperimentsData//2024_Er_Cu_U/"
     "ProgramsC6D6/Analysis_v01/WF/Result_Er167_13_CS10_v03/Final/"
     "WF_Er167_13.in";
 //   ---------------------------- Make2DHisto --------------------------------
 char outdir[200] =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/2DHistos/"
-    "v02/";
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/"
+    "v01/";
 char CalibDirName[200] =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/Calibration/"
-    "CalibrationRunByRunv02";
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/"
+    "CalibrationRunByRunv01";
 
 char outdirGainCorrected[200] =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/2DHistos/"
-    "v02GainCorrected/";
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/"
+    "v01GainCorrected/";
 char CalibDirNameGainCorrected[200] =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/Calibration/"
-    "CalibrationRunByRunGainCorrectedv02";
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/"
+    "CalibrationRunByRunGainCorrectedv01";
 
 char EOSPATH[200] = "/eos/experiment/ntof/processing/official/done/";
 // char EOSPATH[200] =
-//     "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/RootFiles/v01/done";
+//     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01/done";
 
 char WFFolder[1000] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/WF/"
     "v01/";
 // char RunListFname[1000] =
-//     "/afs/cern.ch/work/v/valcayne/2026_Sm/RunLists/"
+//     "/afs/cern.ch/work/v/valcayne/2026_LaBr/RunLists/"
 //     "RunList_2026_v01.txt";
 
 // I put the Runlist directly from EOS so no everone can play with it
 char RunListFname[1000] =
-    "/eos/home-v/valcayne/CopiaOrdenadorCIEMAT/CmExperimentFolder/2026_Sm/"
-    "2026_Sm/RunLists/RunList_2026_v01.txt";
+    "/eos/home-v/valcayne/CopiaOrdenadorCIEMAT/CmExperimentFolder/2026_LaBr/"
+    "2026_LaBr/RunLists/RunList_2026_v01.txt";
 // I put the Runlist directly from EOS so no everone can play with it
 // This is mainly used to correct for the gainshift
 char RunListFnameLABR[1000] =
-    "/eos/home-v/valcayne/CopiaOrdenadorCIEMAT/CmExperimentFolder/2026_Sm/"
-    "2026_Sm/RunLists/RunList_2026_LABR_v02.txt";
+    "/eos/home-v/valcayne/CopiaOrdenadorCIEMAT/CmExperimentFolder/2026_LaBr/"
+    "2026_LaBr/RunLists/RunList_2026_LABR_v01.txt";
 
 char DirNameoutMerged[200] =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/2DHistos/"
-    "v02GainCorrectedMerge";
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/"
+    "v01GainCorrectedMerge";
 
 //   ----------------------------
 //   MakeCalibration--------------------------------
 
 string MCFolder =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Simulations/v02/"
+    "/eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Simulations/v01/"
     "2024_Er_Cu_U_";
 
 // Information experimental data
 string DataFolder =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/Calibration/"
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/"
     "HistoAmp_v03";
 
 string outFolder =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/Calibration/"
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/"
     "OutputMakeEnergyCalibration_v03_NoBa";
 
 //   ---------------------------- Monitoring --------------------------------
 
 char dirnameMonitoring[1000] =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v02";
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/GainMonitoring/v01";
 
 string dirnameMonitor =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/Monitoring";
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Monitoring";
 
 //   ---------------------------- Colors --------------------------------
 

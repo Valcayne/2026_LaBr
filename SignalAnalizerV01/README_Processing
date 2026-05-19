@@ -1,10 +1,13 @@
 
 
-2026/06 new data processing
+2026/06 nLaBR
 
  explained here: https://twiki.cern.ch/twiki/bin/view/NTOF/Lxplus
 
- /eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a ELAB -c LABR_test -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01 -p /eos/experiment/ntof/repositories/RAW2ROOT/UserInput/2026/UserInput_2026_EAR1_Capture_v1.h -r 124649 -l 124652
+ /eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a LAB -c LABR_test -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01 -p /afs/cern.ch/work/v/valcayne/2026_LaBr/SignalAnalizerV01/UserInput/UserInput_2026_LAB_LaBr_v01.sh -r 922871 -l 922871
+
+
+
 
 
  /eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c Sm_Campaign_2026 -o /eos/user/v/valcayne/nTOFDataProcessing/2026_Sm/RootFiles/v01 -p /eos/experiment/ntof/repositories/RAW2ROOT/UserInput/2026/UserInput_2026_EAR1_Capture_v1.h -r 124649 -l 124652
