@@ -1,4 +1,17 @@
 
+
+2026/06 new data processing
+
+ explained here: https://twiki.cern.ch/twiki/bin/view/NTOF/Lxplus
+
+ /eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a ELAB -c LABR_test -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01 -p /eos/experiment/ntof/repositories/RAW2ROOT/UserInput/2026/UserInput_2026_EAR1_Capture_v1.h -r 124649 -l 124652
+
+
+ /eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c Sm_Campaign_2026 -o /eos/user/v/valcayne/nTOFDataProcessing/2026_Sm/RootFiles/v01 -p /eos/experiment/ntof/repositories/RAW2ROOT/UserInput/2026/UserInput_2026_EAR1_Capture_v1.h -r 124649 -l 124652
+ /eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c Sb_Campaign_2026 -o /eos/user/v/valcayne/nTOFDataProcessing/2026_Sm/RootFiles/v01 -p /eos/experiment/ntof/repositories/RAW2ROOT/UserInput/2026/UserInput_2026_EAR1_Capture_v1.h -r 124590 -l 124609
+
+
+
 2026/04 new data processing
 
  explained here: https://twiki.cern.ch/twiki/bin/view/NTOF/Lxplus
