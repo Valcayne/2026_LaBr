@@ -660,9 +660,9 @@ void TakePKUPInfo(const char* fname, PKUPInfo* thePKUPInfo) {
   TTree* tr = (TTree*)f1->Get("PKUP");
 
   if (tr == 0) {
-    cout << " ######## Error getting PKUP from so we would use C6D6 as PKUP"
+    cout << " ######## Error getting PKUP from so we would use LABR as PKUP"
          << fname << " ###########" << endl;
-    tr = (TTree*)f1->Get("C6D6");
+    tr = (TTree*)f1->Get("LABR");
     thePKUPInfo->npulses = tr->GetMaximum("BunchNumber");
     thePKUPInfo->np1 = 0;
     thePKUPInfo->np2 = 0;
