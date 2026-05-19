@@ -33,7 +33,7 @@ MakeEnergyCalibration_2024_Er_Cu_U_L6D6;
 source GeneralFun/GeneralDefinitions.sh
 
 for (( number=$RunMin; number<=$RunMax; number++ )); do
-#echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
+echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
  cp ${PathCalibrationsInitial}  ${PathCalibrations}/Calib_${number}.dat
 done
 more ${PathCalibrations}/Calib_${RunMax}.dat
