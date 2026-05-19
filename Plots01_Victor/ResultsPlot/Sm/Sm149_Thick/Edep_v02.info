@@ -1,0 +1,18 @@
+File with info
+Mon 06 Apr 2026 10:18:42 PM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+ plot2D({"Edep"}, {"Sm149_Thick"}, {1}, {0.0001,0.8,4}, {0.5,1.5,5.5}, {1}, "CP",4,1,1)
+ plot2D({"Edep"}, {"Sm149_Thick"}, {1}, {0.0001,0.8,4}, {0.5,1.5,5.5}, {1}, "CP",4,1,1)
+ plot2D({"En"}, {"Sm149_Thick"}, {0}, {0.15}, {9.999}, {1}, "Yield_Sn_13mm",100,1)
+.x Plot2DHisto.cc+
+ plot2D({"Edep"}, {"Sm149_Thick"}, {1}, {0.0001,0.8,4,6}, {0.5,1.5,5.5,7}, {1}, "CP",4,1,1)
+ plot2D({"Edep"}, {"Sm149_Thick"}, {1}, {0.0001,0.8,4,6,11}, {0.5,1.5,5.5,7,12.5}, {1}, "CP",4,1,1)
+ plot2D({"Edep"}, {"Sm149_Thick"}, {1}, {0.0001,0.8,4,6,11}, {0.5,1.5,5.5,7,12.5}, {1}, "CP",4,1,1,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Sm/Sm149_Thick/Edep_v01")
+ plot2D({"Edep"}, {"Sm149_Thick"}, {1}, {0.0001,0.8,4,6,11}, {0.5,1.5,5.5,7,12.5}, {1}, "CP",4,1,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Sm/Sm149_Thick/Edep_v02")
+

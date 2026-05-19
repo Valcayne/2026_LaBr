@@ -1,0 +1,18 @@
+File with info
+lun 20 abr 2026 12:38:45 CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+ plot2D({"En_WF"}, {"Sm152_Thick_Bi","Sm147_Thick_Bi","Sm152_Thick","Sm147_Thick"}, {0}, {0.15}, {9.999}, {0}, "CP", {10},1);
+ plot2D({"En_WF"}, {"Sm152_Thick_Bi","Sm147_Thick_Bi","Sm152_Thick","Sm147_Thick"}, {0}, {0.15}, {9.999}, {0}, "CP", {50},1);
+ plot2D({"En_WF"}, {"Sm152_Thick_Bi","Sm147_Thick_Bi","Sm149_Thick_Bi","Sm152_Thick","Sm147_Thick","Sm149_Thick"}, {0}, {0.15}, {9.999}, {0}, "CP", {50},1);
+ plot2D({"En_WF"}, {"Sm152_Thick_Bi","Sm147_Thick_Bi","Sm149_Thick_Bi","Sm152_Thick","Sm147_Thick","Sm149_Thick"}, {0}, {0.15}, {9.999}, {0}, "CP", {50},1);
+ plot2D({"En_WF"}, {"Sm152_Thick_Bi","Sm147_Thick_Bi","Sm149_Thick_Bi","Sm152_Thick","Sm147_Thick","Sm149_Thick"}, {0}, {0.15}, {9.999}, {0}, "CP", {200},1);
+ plot2D({"En_WF"}, {"Sm152_Thick_Bi","Sm147_Thick_Bi","Sm149_Thick_Bi","Sm152_Thick","Sm147_Thick","Sm149_Thick"}, {0}, {0.15}, {9.999}, {0}, "CP", {200},1);
+SaveRootEpsPngTxt(c1,"ResultsPlot/Sm/CompareFilters_147_149_152_v01")
+ plot2D({"En_WF"}, {"Sm152_Thick_Bi","Sm147_Thick_Bi","Sm149_Thick_Bi","Sm152_Thick","Sm147_Thick","Sm149_Thick"}, {0}, {0.15}, {9.999}, {0}, "CP", {200},1);
+ plot2D({"En_WF"}, {"Sm152_Thick_Bi","Sm147_Thick_Bi","Sm149_Thick_Bi","Sm152_Thick","Sm147_Thick","Sm149_Thick"}, {0}, {0.15}, {9.999}, {0}, "CP", {50},1);
+SaveRootEpsPngTxt(c1,"ResultsPlot/Sm/CompareFilters_147_149_152_v02")
+

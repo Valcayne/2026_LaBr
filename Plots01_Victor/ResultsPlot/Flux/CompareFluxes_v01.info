@@ -1,0 +1,18 @@
+File with info
+Thu 09 Apr 2026 10:14:58 PM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+plot2D({"En"}, {"Mo100","Er164_Thick","Sm147_Thick"}, {0}, {16e3}, {30e3}, {1}, "CP",100,0,0,0,1)
+plot2D({"En"}, {"Mo100","Er164_Thick","Sm147_Thick"}, {0}, {16e3}, {30e3}, {1}, "CP",10,0,0,0,1)
+plot2D({"En"}, {"AllRuns_NoFilters","AllRuns_NoFilters_1","AllRuns_NoFilters_2"}, {0}, {16e3}, {30e3}, {1}, "CP",10,0,0,0,1)
+plot2D({"En"}, {"AllRuns_NoFilters","AllRuns_NoFilters_1","AllRuns_NoFilters_2","AllRuns_NoFilters_3","AllRuns_NoFilters_4","AllRuns_NoFilters_5","AllRuns_NoFilters_6","AllRuns_NoFilters_7"}, {0}, {16e3}, {30e3}, {1}, "CP",10,0,0,0,1)
+plot2D({"En"}, {"AllRuns_NoFilters","AllRuns_NoFilters_1","AllRuns_NoFilters_2","AllRuns_NoFilters_3","AllRuns_NoFilters_4","AllRuns_NoFilters_5","AllRuns_NoFilters_6","AllRuns_NoFilters_7"}, {0}, {16e3}, {30e3}, {1}, "CP",10,0,0,0,1)
+plot2D({"En"}, {"AllRuns_NoFilters_1","AllRuns_NoFilters_2","AllRuns_NoFilters_3","AllRuns_NoFilters_4","AllRuns_NoFilters_5","AllRuns_NoFilters_6","AllRuns_NoFilters_7"}, {0}, {16e3}, {30e3}, {1}, "CP",10,0,0,0,1)
+plot2D({"En"}, {"AllRuns_NoFilters_1","AllRuns_NoFilters_2","AllRuns_NoFilters_3","AllRuns_NoFilters_4","AllRuns_NoFilters_5","AllRuns_NoFilters_6","AllRuns_NoFilters_7"}, {0}, {16e3}, {30e3}, {1}, "CP",10,0,0,0,1)
+plot2D({"En"}, {"AllRuns_NoFilters_1","AllRuns_NoFilters_2","AllRuns_NoFilters_3","AllRuns_NoFilters_4","AllRuns_NoFilters_5","AllRuns_NoFilters_6","AllRuns_NoFilters_7"}, {0}, {16e3}, {30e3}, {1}, "CP",20,0,0,0,1)
+SaveRootEpsPngTxt(c1m,"ResultsPlot/Flux/CompareFluxes_v01")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Flux/CompareFluxes_v01")
+

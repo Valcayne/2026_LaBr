@@ -1,0 +1,18 @@
+File with info
+lun 16 mar 2026 16:47:05 CET
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+SaveRootEpsPngTxt(c1,"ResultsPlot/Au_Mis/Det4_v01")
+ plot2D({"En"}, {"Au13","Au13_Mis"}, {0}, {0.15}, {9.999}, {1}, "CP", {200},1,0,0,1);
+SaveRootEpsPngTxt(c1,"ResultsPlot/Au_Mis/Det0_v01")
+ plot2D({"En"}, {"Au13"}, {0,1,2,3,4}, {0.15}, {9.999}, {1}, "CP", {200},1,0,0,1);
+ plot2D({"En"}, {"Au13"}, {1,2,3,4}, {0.15}, {9.999}, {1}, "CP", {200},1,0,0,1);
+.x Plot2DHisto.cc+
+ plot2D({"En"}, {"Au45"}, {0,1,2,3,4}, {0.15}, {9.999}, {1}, "CP", {200},1,0,0,1);
+ plot2D({"En"}, {"Au"}, {0,1,2,3,4}, {0.15}, {9.999}, {1}, "CP", {200},1,0,0,1);
+ plot2D({"En"}, {"Au"}, {1,2,3,4}, {0.15}, {9.999}, {1}, "CP", {200},1,0,0,1);
+SaveRootEpsPngTxt(c1,"ResultsPlot/Au_EffDet")
+

@@ -1,0 +1,18 @@
+File with info
+Fri 03 Apr 2026 10:13:04 AM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+ plot2D({"En"}, {"PbNat_2mm"}, {0}, {0.15}, {9.999}, {1,2}, "CP",1000,1,0,0,1)
+ plot2D({"En"}, {"PbNat_2mm"}, {0}, {0.15}, {9.999}, {1,2}, "CP",5000,1,0,0,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Pb/PbNat_Parasitic_v01")
+ plot2D({"En"}, {"Pb206_5mm"}, {0}, {0.15}, {9.999}, {1,2}, "CP",5000,1,0,0,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Pb/Pb206_Parasitic_v01")
+ plot2D({"En"}, {"Pb208_1mm"}, {0}, {0.15}, {9.999}, {1,2}, "CP",5000,1,0,0,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Pb/Pb208_Parasitic_v01")
+.x Plot2DHisto.cc+
+ plot2D({"En"}, {"PbNat_2mm"}, {0}, {0.15}, {9.999}, {1,2}, "CP",5000,1,0,0,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Pb/PbNat_Parasitic_UseOfHisOwnBakcground_v01")
+

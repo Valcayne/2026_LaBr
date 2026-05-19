@@ -1,0 +1,36 @@
+File with info
+Sun 29 Mar 2026 12:19:26 PM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+ plot2D({"En_WF"}, {"SmNat_5um"}, {0}, {0.15}, {9.999}, {1}, "Yield_Sn_25mm",100,1,0,1)
+ plot2D({"En_WF"}, {"SmNat_5um"}, {0}, {0.15}, {9.999}, {0}, "Yield_Sn_25mm",100,1,0,1)
+.x Plot2DHisto.cc+
+ plot2D({"En_WF"}, {"SmNat_5um"}, {0}, {0.15}, {9.999}, {0}, "Yield_Sn_25mm",100,1,0,1)
+ plot2D({"En_WF"}, {"SmNat_5um"}, {0}, {0.15}, {9.999}, {0}, "Yield_Sn_25mm",10,1,0,1)
+ plot2D({"En_WF"}, {"SmNat_5um"}, {0}, {0.15}, {9.999}, {0}, "Yield_Sn_25mm",100,1,0,1)
+.x Plot2DHisto.cc+
+ plot2D({"En_WF"}, {"SmNat_5um"}, {0}, {0.15}, {9.999}, {0}, "Yield_Sn_25mm",100,1,0,1)
+.q
+SaveRootEpsPngTxt(c1,"ResultsPlot/Sm/SmNat_5um/SmNat_5um_WF_v01")
+
+File with info
+Sun 29 Mar 2026 12:34:42 PM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+.x Plot2DHisto.cc+
+ plot2D({"En_WF"}, {"SmNat_5um"}, {0}, {0.15}, {9.999}, {0}, "Yield_Sn_25mm",100,1,0,1)
+ plot2D({"En_WF"}, {"SmNat_5um"}, {0}, {0.15}, {9.999}, {0}, "Yield_Sn_25mm",10,1,0,1)
+ plot2D({"En_WF"}, {"SmNat_5um"}, {0}, {0.15}, {9.999}, {0}, "Yield_Sn_25mm",100,1,0,1)
+.x Plot2DHisto.cc+
+ plot2D({"En_WF"}, {"SmNat_5um"}, {0}, {0.15}, {9.999}, {0}, "Yield_Sn_25mm",100,1,0,1)
+.q
+SaveRootEpsPngTxt(c1,"ResultsPlot/Sm/SmNat_5um/SmNat_5um_WF_v01")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Sm/SmNat_5um/SmNat_5um_WF_v02")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Sm/SmNat_5um/SmNat_5um_WF_v01")
+

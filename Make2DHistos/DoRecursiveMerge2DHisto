@@ -1,0 +1,95 @@
+#!/bin/bash
+
+# condor_submit Condor/ProgramsLaunch/LaunchRecursive.sh 
+
+# Change to the working directory
+cd /afs/cern.ch/work/v/valcayne/2026_Sm/Make2DHistos
+source ../GeneralFun/GeneralDefinitions.sh
+echo "Job started at $(date)"
+
+# File to track last check time
+timestamp_file="/tmp/last_check_timestamp"
+touch "$timestamp_file"
+    echo "file $file"
+
+# Loop to repeat many times
+for (( number=0; number<=1000000; number++ )); do
+
+    file="$RunTypeToBeMerged"
+
+    # Check if the variable is provided
+    if [ -z "$file" ]; then
+        echo "Usage: $0 <file>"
+        exit 1
+    fi
+
+    # Read the file line by line
+    while IFS= read -r line; do
+
+        # Check for new files in TEST/TEST
+        new_files=$(find ${Folder2DGainCorrected} -type f -newer "$timestamp_file")
+
+        if [ -n "$new_files" ]; then
+            echo "New files at $(date)  detected in ${Folder2DGainCorrected}"
+            echo "doing  Merge2DHistos $line"
+            /afs/cern.ch/work/v/valcayne/2026_Sm/Make2DHistos/Merge2DHistos ${line}
+            sleep 10
+               fi
+
+  # Check for new files in TEST/TEST
+        new_files=$(find ${RunTypeTypeFolder} -type f -newer "$timestamp_file")
+
+        if [ -n "$new_files" ]; then
+            echo "New files at $(date)  detected in ${Folder2DGainCorrected}"
+            echo "doing  Merge2DHistos $line"
+             /afs/cern.ch/work/v/valcayne/2026_Sm/Make2DHistos/Merge2DHistos ${line}
+            sleep 1
+               fi
+
+
+    done < "$file"
+
+    # Update timestamp after checking
+    touch "$timestamp_file"
+
+    # Wait 60 minutes
+    sleep 10
+
+done
+
+
+
+exit
+
+
+
+
+
+# Change to the working directory
+cd /afs/cern.ch/work/v/valcayne/2026_Sm/Make2DHistos
+source ../GeneralFun/GeneralDefinitions.sh
+echo "Job started at $(date)"
+
+# Loop to repeat 100000 times (practically infinite)
+for (( number=0; number<=1000000; number++ )); do
+
+  
+   file="$RunTypeToBeMerged"
+echo "file $file"
+# Check if the variable is provided
+if [ -z "$file" ]; then
+    echo "Usage: $0 <file>"
+    exit 1
+fi
+
+# Read the file line by line
+while IFS= read -r line; do
+    echo " Merging $line"
+    Merge2DHistos $line&
+    sleep 10
+done < "$file"
+
+    # Wait 60 minutes
+    sleep 3600
+
+done

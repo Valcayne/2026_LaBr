@@ -1,0 +1,56 @@
+#!/bin/bash
+
+Run=$1
+
+FolderPrograms=/afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/Make2DHistos/
+echo "${FolderPrograms}Make2DHistos ${Run}"
+${FolderPrograms}Make2DHistos ${Run}
+
+echo " "
+echo " "
+sleep 5
+
+echo "${FolderPrograms}../GainMonitoring/GainMonitoring01 AllRuns 118885 /afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/GainMonitoring/inputs/GainMon01/inp01.inp ${Run} ${Run}" 
+${FolderPrograms}../GainMonitoring/GainMonitoring01 AllRuns 118885 /afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/GainMonitoring/inputs/GainMon01/inp01.inp ${Run} ${Run} 
+echo " "
+echo " "
+
+echo "${FolderPrograms}../GainMonitoring/GainMonitoring01 Y 118876 /afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/GainMonitoring/inputs/GainMon01/inp01_C6D6.inp ${Run} ${Run}" 
+${FolderPrograms}../GainMonitoring/GainMonitoring01 Y 118876 /afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/GainMonitoring/inputs/GainMon01/inp01_C6D6.inp ${Run} ${Run} 
+echo " "
+echo " "
+
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 SILI 1 AllRuns 118885 ${Run} ${Run}"
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 SILI 2 AllRuns 118885 ${Run} ${Run}"
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 SILI 3 AllRuns 118885 ${Run} ${Run}"
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 SILI 4 AllRuns 118885 ${Run} ${Run}"
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 FIMG 1 AllRuns 118885 ${Run} ${Run}"
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 FIMG 2 AllRuns 118885 ${Run} ${Run}"
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 LIGL 1 AllRuns 118885 ${Run} ${Run}"
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 C6D6 1 AllRuns 118876 ${Run} ${Run}"
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 C6D6 2 AllRuns 118876 ${Run} ${Run}"
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 C6D6 3 AllRuns 118876 ${Run} ${Run}"
+echo "${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 C6D6 4 AllRuns 118876 ${Run} ${Run}"
+
+
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 SILI 1 AllRuns 118885 ${Run} ${Run}
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 SILI 2 AllRuns 118885 ${Run} ${Run}
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 SILI 3 AllRuns 118885 ${Run} ${Run}
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 SILI 4 AllRuns 118885 ${Run} ${Run}
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 FIMG 1 AllRuns 118885 ${Run} ${Run}
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 FIMG 2 AllRuns 118885 ${Run} ${Run}
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v03 LIGL 1 AllRuns 118885 ${Run} ${Run}
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 C6D6 1 AllRuns 118876 ${Run} ${Run}
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 C6D6 2 AllRuns 118876 ${Run} ${Run}
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2026_Sm/GainMonitoring/v04 C6D6 3 AllRuns 118876 ${Run} ${Run}
+${FolderPrograms}../GainMonitoring/CreateCalibFiles01 /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected/ /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/CalibrationRunByRunGainCorrected// /eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/GainMonitoring/v04 C6D6 4 AllRuns 118876 ${Run} ${Run}
+
+
+echo " "
+echo " "
+
+
+echo "${FolderPrograms}Make2DHistos ${Run} GainCorrected"
+${FolderPrograms}Make2DHistos ${Run} GainCorrected
+
+exit

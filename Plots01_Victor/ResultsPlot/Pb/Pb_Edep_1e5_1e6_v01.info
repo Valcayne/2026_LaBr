@@ -1,0 +1,18 @@
+File with info
+Fri 10 Apr 2026 02:36:55 PM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+ plot2D({"En"}, {"Pb208_1mm","Pb206_5mm","PbNat_2mm"}, {0}, {0.15}, {9.999}, {0}, "CP",1000,1)
+ plot2D({"En"}, {"Pb208_1mm","Pb206_5mm","PbNat_2mm"}, {0}, {0.15}, {9.999}, {0}, "CP",1000,1,1)
+ plot2D({"Edep"}, {"Pb208_1mm","Pb206_5mm","PbNat_2mm"}, {0}, {1e5}, {1e6}, {0}, "CP",1,1,1)
+.x Plot2DHisto.cc+
+ plot2D({"Edep"}, {"Pb208_1mm","Pb206_5mm","PbNat_2mm"}, {0}, {1e5}, {1e6}, {0}, "CP",1,1,1)
+ plot2D({"Edep"}, {"Pb208_1mm","Pb206_5mm","PbNat_2mm"}, {0}, {1e5}, {1e6}, {0}, "CP",10,1,1)
+ plot2D({"Edep"}, {"Pb208_1mm","Pb206_5mm","PbNat_2mm"}, {0}, {1e5}, {1e6}, {0}, "CP",4,1,1)
+ plot2D({"Edep"}, {"Pb208_1mm","Pb206_5mm","PbNat_2mm"}, {0}, {1e5}, {1e6}, {0}, "CP",4,1)
+ plot2D({"Edep"}, {"Pb208_1mm","Pb206_5mm","PbNat_2mm"}, {0}, {1e5}, {1e6}, {0}, "CP",4,1,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Pb/Pb_Edep_1e5_1e6_v01")
+

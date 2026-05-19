@@ -1,0 +1,104 @@
+#!/bin/bash
+
+source ../GeneralFun/GeneralDefinitions.sh
+
+
+
+TypeProcess=$1
+Condor=$2
+
+
+Arguments=${FolderOnLXPLUS}/Make2DHistos/Condor/Inputs/ArgumentsForCondor2DHisto.txt
+
+echo "TypeProcess ${TypeProcess}" 
+echo " RunMin ${RunMin}" 
+echo " RunMax ${RunMax} " 
+echo " 2DFolder ${Folder2D}" 
+echo " 2DFolderGainCorrected  ${Folder2DGainCorrected} " 
+echo " EOSPATH ${EOSPATH}" 
+
+echo " FolderOnLXPLUS ${FolderOnLXPLUS}" 
+
+
+if [  ${Condor} == "NoCondor" ]; then
+    echo "I do NoCondor"
+ 
+else 
+    echo "I do Condor"
+
+fi
+
+
+if [  ${TypeProcess} == "GainCorrected" ]; then
+    echo "I do GainCorrected"
+    GainCorrected="GainCorrected"
+outdirDoMany=${Folder2DGainCorrected}
+ProgramToSubmit=${FolderOnLXPLUS}/Make2DHistos/Condor/ProgramsLaunch/LaunchCondorMake2DGainCorrected.sh
+
+elif [  ${TypeProcess} == "GainCorrecting" ]; then
+    echo "I do GainCorrecting"
+outdirDoMany=${Folder2DGainCorrected}
+ProgramToSubmit=${FolderOnLXPLUS}/Make2DHistos/Condor/ProgramsLaunch/LaunchCondorMake2DGainCorrecting.sh
+elif [  ${TypeProcess} == "All" ]; then
+    echo "Launch DoManyMake2DHisto and DoManyMake2DHisto GainCorrected"
+${FolderOnLXPLUS}/Make2DHistos/DoManyMake2DHisto Normal ${Condor} 
+${FolderOnLXPLUS}/Make2DHistos/DoManyMake2DHisto GainCorrected ${Condor} 
+exit
+else 
+ echo "I do no correct gain"
+outdirDoMany=${Folder2D}
+ProgramToSubmit=${FolderOnLXPLUS}/Make2DHistos/Condor/ProgramsLaunch/LaunchCondorMake2D.sh
+
+fi
+
+echo " Folder used   ${outdirDoMany} " 
+
+
+rm $Arguments
+
+
+for (( number=$RunMin; number<=$RunMax; number++ )); do
+
+if  [ -f ${outdirDoMany}/Histos01_${number}.root ];
+then 
+SizeFile=$(stat -c %s "${outdirDoMany}/Histos01_${number}.root")
+
+ if [ $SizeFile -lt 1000 ];  
+ then 
+ echo " The file Histos01_${number}.root is too small (${SizeFile}) I delete it"
+ rm ${outdirDoMany}/Histos01_${number}.root
+ fi
+
+
+
+elif [ -f ${EOSPATH}/run${number}.root ];
+ then
+ SizeRootFile=$(stat -c %s "${EOSPATH}/run${number}.root")
+if [ $SizeRootFile -lt 1000 ];  
+ then 
+ echo " The file run${number}.root is too small (${SizeRootFile}) we do not launch "
+ else
+ echo "We launch run $number  $GainCorrected"
+echo "$number $GainCorrected">>${Arguments}
+if [  ${Condor} == "NoCondor" ]; 
+then
+${FolderOnLXPLUS}/Make2DHistos/Make2DHistos $number $GainCorrected
+fi
+fi
+
+else
+echo "There is not run${number}.root so we do not launch"
+
+fi
+done
+
+
+if [ "${Condor}" != "NoCondor" ]; then  
+ echo "condor_submit ${ProgramToSubmit}"
+condor_submit ${ProgramToSubmit}
+exit
+
+fi
+
+
+

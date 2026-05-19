@@ -1,0 +1,18 @@
+File with info
+Fri 06 Feb 2026 11:36:37 AM CET
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/SignalAnalizerV01
+
+Last Root commands
+DrawYields({"outputs/out06EXFOR_v01/CS_EAR1_SampleA_Cm244.out","outputs/out06EXFOR_v01/CS_EAR1_SampleA_Pu240.out"})
+.q
+.x ./plot01.cc+
+   plot05_EXFOR("Cm244_Sta_Fit2_39_Pu240_06_Iter10",0.1,100,1,-1,1,"ed");
+DrawYields({"outputs/out06EXFOR_v01/CS_EAR1_SampleA_Cm244.out","outputs/out06EXFOR_v01/CS_EAR1_SampleA_Pu240.out"})
+TFile *_file0 = TFile::Open("CompareSignals_Sm_124063_v01.root")
+c1->Draw()
+SaveRootEpsPngTxt(c1,"AverageSignals/CompareSignals_Sm_124063_v01")
+SaveRootEpsPngTxt(c1,"AverageSignals/CompareSignals_Sm_124063_v02")
+SaveRootEpsPngTxt(c1,"AverageSignals/CompareSignals_Sm_124063_v03")
+

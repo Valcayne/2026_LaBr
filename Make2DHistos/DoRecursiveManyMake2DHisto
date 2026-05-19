@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#condor_submit Condor/ProgramsLaunch/LaunchRecursive.sh 
+
+
+# Change to the working directory
+cd /afs/cern.ch/work/v/valcayne/2026_Sm/Make2DHistos
+source ../GeneralFun/GeneralDefinitions.sh
+echo "Job started at $(date)"
+
+# Loop to repeat 100000 times (practically infinite)
+for (( number=0; number<=1000000; number++ )); do
+
+    # Run DoManyMake2DHisto with "All" argument
+    ./DoManyMake2DHisto All NoCondor
+    echo "Finished DoManyMake2DHisto at $(date)"
+       
+      # Wait 60 minutes
+    sleep 120
+
+done

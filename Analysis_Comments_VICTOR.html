@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Analysis_Comments_VICTOR.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="analysis-of-the-sm-in-2026">Analysis of the Sm in  2026</h1>
+<p>The idea of this document is to try to store all the information of the analysis in case, I have to repeat it and to understand it.</p>
+<p>To convert to pdf:  Open the Markdown file; Press F1 or Ctrl+Shift+P ;Type export and select below</p>
+<h2 id="table-of-contents">TABLE OF CONTENTS</h2>
+<ul>
+<li><a href="#calibrations">Calibrations</a></li>
+<li><a href="#averagesignal">AverageSignal</a></li>
+<li><a href="#preliminary-results">Preliminary Results </a></li>
+<li><a href="#gain-monitor">Gain Monitor </a></li>
+</ul>
+<h2 id="averagesignal">AverageSignal</h2>
+<p>Average signals they look correct</p>
+<img src="SignalAnalizerV01/AverageSignals/CompareSignals_Sm_124063_v01.png" alt="drawing" width="400"/>
+<img src="SignalAnalizerV01/AverageSignals/CompareSignals_Sm_124063_v02.png" alt="drawing" width="400"/>
+<img src="SignalAnalizerV01/AverageSignals/CompareSignals_Sm_124063_v03.png" alt="drawing" width="400"/>
+<p>If we compare with the values from 2025 the signals are similar. However there is a considerable improvement in detector 1</p>
+<img src="SignalAnalizerV01/AverageSignals/Compare_Marex_Sm_Det1_v01.png" alt="drawing" width="400"/>
+<img src="SignalAnalizerV01/AverageSignals/Compare_Marex_Sm_Det2_v01.png" alt="drawing" width="400"/>
+<img src="SignalAnalizerV01/AverageSignals/Compare_Marex_Sm_Det3_v01.png" alt="drawing" width="400"/>
+<img src="SignalAnalizerV01/AverageSignals/Compare_Marex_Sm_Det4_v01.png" alt="drawing" width="400"1>2
+<p>After the change of the voltage we did I calculate the signals again, there are not considerable differences</p>
+<img src="SignalAnalizerV01/Compare_Sm_124063_124122_Det1_2_v01.png" alt="drawing" width="400"/>
+<img src="SignalAnalizerV01/Compare_Sm_124063_124122_Det1_2_v02.png" alt="drawing" width="400"/>
+<img src="SignalAnalizerV01/Compare_Sm_124063_124122_Det3_4_v01.png" alt="drawing" width="400"/>
+<img src="SignalAnalizerV01/Compare_Sm_124063_124122_Det3_4_v02.png" alt="drawing" width="400"/>
+<p>I have check the dead time and 30 ns seem reasonable</p>
+<p>Gain Shifts!</p>
+<p>Det1
+<img src="DatosEnDiscoDuro/ResultsPlot2DHisto/v01C6D6_Edep_Y_1_Det1_PType3_Y_2.png" alt="drawing" width="400"/></p>
+<p>Det2
+<img src="DatosEnDiscoDuro/ResultsPlot2DHisto/v01C6D6_Edep_Y_1_Det2_PType3_Y_2.png" alt="drawing" width="400"/></p>
+<p>Det3
+<img src="DatosEnDiscoDuro/ResultsPlot2DHisto/v01C6D6_Edep_Y_1_Det3_PType3_Y_2.png" alt="drawing" width="400"/></p>
+<p>Det4
+<img src="DatosEnDiscoDuro/ResultsPlot2DHisto/v01C6D6_Edep_Y_1_Det4_PType3_Y_2.png" alt="drawing" width="400"/></p>
+<h2 id="calibrations">Calibrations</h2>
+<p>Version v02 with Y_02, etc ...</p>
+<p>The second degree calibration values are:</p>
+<p>1 0.019924  0.000305497 -3.43203e-10
+2 0.0199209  0.000313759 -6.25235e-10
+3 0.0199249  0.000284846 -9.71497e-11
+4 0.0199267  0.000270444 -2.41053e-11</p>
+<p>The second degree + pol 1 calibration values are:</p>
+<p>1 0.0125886  0.000320205 -2.48728e-09 4784.69 0.0695305 0.000296403  0<br>
+2 0.0113683  0.000327125 -2.54539e-09 5626.85 0.091959 0.00029848  0<br>
+3 0.0197883  0.000297224 -2.14551e-09 3725.64 0.0495689 0.000281237  0
+4 0.0198836  0.000281696 -1.77198e-09 3698.25 0.044119 0.00026859  0</p>
+<img src="DatosEnDiscoDuro/Calibration/OutputMakeEnergyCalibration_v02/EnergyFitDet1.png" alt="drawing" width="400"/>
+<img src="DatosEnDiscoDuro/Calibration/OutputMakeEnergyCalibration_v02/EnergyFitDet2.png" alt="drawing" width="400"/>
+<img src="DatosEnDiscoDuro/Calibration/OutputMakeEnergyCalibration_v02/EnergyFitDet3.png" alt="drawing" width="400"/>
+<img src="DatosEnDiscoDuro/Calibration/OutputMakeEnergyCalibration_v02/EnergyFitDet4.png" alt="drawing" width="400"/>
+<img src="DatosEnDiscoDuro/Calibration/OutputMakeEnergyCalibration_v02/ResolFitDet1.png" alt="drawing" width="400"/>
+<img src="DatosEnDiscoDuro/Calibration/OutputMakeEnergyCalibration_v02/ResolFitDet2.png" alt="drawing" width="400"/>
+<img src="DatosEnDiscoDuro/Calibration/OutputMakeEnergyCalibration_v02/ResolFitDet3.png" alt="drawing" width="400"/>
+<img src="DatosEnDiscoDuro/Calibration/OutputMakeEnergyCalibration_v02/ResolFitDet4.png" alt="drawing" width="400"/>
+<p>Det1</p>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_1_Ba.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_1_Cs.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_1_Y.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_1_AmBe.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_1_CmC.png" alt="drawing" width="400"/>
+<p>Det2</p>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_2_Ba.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_2_Cs.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_2_Y.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_2_AmBe.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_2_CmC.png" alt="drawing" width="400"/>
+<p>Det3</p>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_3_Ba.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_3_Cs.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_3_Y.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_3_AmBe.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_3_CmC.png" alt="drawing" width="400"/>
+<p>Det4</p>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_4_Ba.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_4_Cs.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_4_Y.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_4_AmBe.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/CheckCalibrations/CheckCalibrations_4_CmC.png" alt="drawing" width="400"/>
+<p>With this calibration the Au cascade seems to be correct</p>
+<img src="Plots01_Victor/ResultsPlot/Edep_Au_Cascades_v01.png" alt="drawing" width="400"/>
+<h2 id="preliminary-results">Preliminary Results</h2>
+<p>Compare Empty 2024 with 2026</p>
+<img src="Plots01_Victor/ResultsPlot/CompareEmpty_2024_2026.png" alt="drawing" width="400"/>
+<p>Compare Au 20 mm with JEFF-3.3</p>
+<img src="Plots01_Victor/ResultsPlot/En_Au_Yield_v01.png" alt="drawing" width="400"/>
+<p>Compare C for dedicated and parasitic with different thresholds</p>
+<p>As always it seems that there are some low energy counts from Carbon in the KeV region that are different for primary than for parasitic this problem is reduced when you increase the threshold to 0.3 MeV.</p>
+<img src="Plots01_Victor/ResultsPlot/En_C_Compare_1_2_v01.png" alt="drawing" width="400"/>
+<img src="Plots01_Victor/ResultsPlot/En_C_Compare_1_2_v02.png" alt="drawing" width="400"/>
+<h2 id="gain-monitor">Gain Monitor</h2>
+<p>Compare Empty 2024 with 2026</p>
+<img src="DatosEnDiscoDuro/GainMonitoring/v02/Plot_SILI.png" alt="drawing" width="400"/>
+<img src="DatosEnDiscoDuro/GainMonitoring/v02/Plot_C6D6_Y.png" alt="drawing" width="400"/>
+<img src="DatosEnDiscoDuro/GainMonitoring/v02/Plot_C6D6_Cs.png" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+<img src="" alt="drawing" width="400"/>
+
+</body>
+</html>

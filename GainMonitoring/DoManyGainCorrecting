@@ -1,0 +1,19 @@
+#!/bin/bash
+
+source ../GeneralFun/GeneralDefinitions.sh
+
+Arguments=Condor/ArgumentsForCondor.txt
+rm $Arguments
+
+
+
+
+for (( number=$RunMin; number<=$RunMax; number++ )); do
+
+echo "$number"
+echo "$number">>${Arguments}
+
+done
+condor_submit /afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/GainMonitoring/Condor/LaunchCondorGain.sh
+exit
+

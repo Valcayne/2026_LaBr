@@ -1,0 +1,18 @@
+File with info
+mar 17 feb 2026 16:12:00 CET
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+.x Plot2DHisto.cc+
+plot2DCheckCalibrations(3)
+.1
+.q
+.q
+.x Plot2DHisto.cc+
+plot2DCheckCalibrations(4)
+.x Plot2DHisto.cc+
+plot2D({"En"},{"Mo100","Empty"},{0},{0.15},{10},{1},"CP",10)
+plot2D({"En"},{"Mo100","Empty"},{0},{0.15},{9.999},{1},"CP",10)
+

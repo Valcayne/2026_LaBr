@@ -1,0 +1,36 @@
+File with info
+Thu 26 Feb 2026 03:00:46 PM CET
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+ plot2D({"En"}, {"C"}, {0}, {0.15}, {9.99}, {1}, "Uncer",2000,1)
+ plot2D({"En"}, {"C"}, {0}, {0.15}, {9.99}, {1}, "Counts",2000,1)
+ plot2D({"En"}, {"C"}, {0}, {0.15}, {9.99}, {1}, "Counts",2000)
+ plot2D({"En"}, {"C"}, {0}, {0.15}, {9.99}, {1}, "Uncer",2000)
+ plot2D({"En"}, {"Empty","C","Pb"}, {0}, {0.15}, {9.99}, {1}, "Uncer",2000,1)
+.x Plot2DHisto.cc+
+ plot2D({"En"}, {"Empty","C","Pb"}, {0}, {0.15}, {9.99}, {1}, "Uncer",2000,1)
+.x Plot2DHisto.cc+
+ plot2D({"En"}, {"Empty","C","Pb"}, {0}, {0.15}, {9.99}, {1}, "Uncer",2000,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Uncertainty_10BinsDecade_1e17")
+
+File with info
+Thu 26 Feb 2026 03:04:49 PM CET
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor/ResultsPlot
+
+Last Root commands
+.x Plot2DHisto.cc+
+ plot2D({"En"}, {"Empty","C","Pb"}, {0}, {0.15}, {9.99}, {1}, "Uncer",2000,1)
+.x Plot2DHisto.cc+
+ plot2D({"En"}, {"Empty","C","Pb"}, {0}, {0.15}, {9.99}, {1}, "Uncer",2000,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Uncertainty_10BinsDecade_1e17")
+TFile *_file0 = TFile::Open("Uncertainty_10BinsDecade_1e17.root")
+c1->Draw()
+.x Plot2DHisto.cc+
+ plot2D({"En"}, {"Empty","C","Pb"}, {0}, {0.15}, {9.99}, {1}, "Uncer",2000,1)
+SaveRootEpsPngTxt(c1,"Uncertainty_10BinsDecade_1e17")
+

@@ -1,0 +1,18 @@
+File with info
+Fri 03 Apr 2026 11:38:56 AM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+SaveRootEpsPngTxt(c1,"ResultsPlot/Pb/PbNat_Parasitic_UseOfHisOwnBakcground_v01")
+ plot2D({"Edep"}, {"Background","PbNat_2mm_Background","Pb208_1mm_Background}, {0}, {0.15}, {9.999}, {3}, "CPulse",10,0,0,0,1)
+.@
+ plot2D({"Edep"}, {"Background","PbNat_2mm_Background","Pb208_1mm_Background"}, {0}, {0.15}, {9.999}, {3}, "CPulse",10,0,0,0,1)
+ plot2D({"Edep"}, {"Background","PbNat_2mm_Background","Pb208_1mm_Background","Background_11"}, {0}, {0.15}, {9.999}, {3}, "CPulse",10,0,0,0,1)
+ plot2D({"Edep"}, {"Background","PbNat_2mm_Background","Pb208_1mm_Background"}, {0}, {0.15}, {9.999}, {3}, "CPulse",10,0,0,0,1)
+ plot2D({"Edep"}, {"Background","PbNat_2mm_Background","Pb208_1mm_Background"}, {0}, {0.15}, {9.999}, {3}, "CPulse",40,0,0,0,1)
+ plot2D({"Edep"}, {"Background","PbNat_2mm_Background","Pb208_1mm_Background"}, {0}, {0.15}, {9.999}, {3}, "CPulse",4,0,0,0,1)
+ plot2D({"Edep"}, {"Background","PbNat_2mm_Background","Pb208_1mm_Background"}, {0}, {0.15}, {9.999}, {3}, "CPulse",10,0,0,0,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Pb/PbNat_backgrounds")
+

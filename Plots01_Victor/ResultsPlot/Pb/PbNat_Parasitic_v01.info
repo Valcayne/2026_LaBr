@@ -1,0 +1,18 @@
+File with info
+Fri 03 Apr 2026 10:07:55 AM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+ plot2D({"Edep"}, {"Background","PbNat_2mm_Background"}, {0}, {0.15}, {9.999}, {3}, "CPulse",10,0,0,0,1)
+ plot2D({"Edep"}, {"Background","PbNat_2mm_Background"}, {0}, {0.001}, {9.999}, {3}, "CPulse",10,0,0,0,1)
+.x Plot2DHisto.cc+
+ plot2D({"Edep"}, {"Background","PbNat_2mm_Background"}, {0}, {0.15}, {9.999}, {3}, "CPulse",10,0,0,0,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Pb/Pb_Background_v01")
+ plot2D({"En"}, {"PbNat_2mm","Pb206_5mm","Pb208_1mm"}, {0}, {0.15}, {9.999}, {1,2}, "CP",1000,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Pb/Pb_Parasitic_v01")
+ plot2D({"En"}, {"PbNat_2mm"}, {0}, {0.15}, {9.999}, {1,2}, "CP",1000,1,0,0,1)
+ plot2D({"En"}, {"PbNat_2mm"}, {0}, {0.15}, {9.999}, {1,2}, "CP",5000,1,0,0,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Pb/PbNat_Parasitic_v01")
+

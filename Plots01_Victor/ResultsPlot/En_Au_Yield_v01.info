@@ -1,0 +1,18 @@
+File with info
+jue 19 feb 2026 10:22:30 CET
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+plot2D({"En"},{"Au"},{0},{0.15},{9.999},{1,2},"Yield",2000,1,1,0)
+plot2D({"En"},{"Au"},{0},{0.15},{9.999},{1,2},"Yield",2000,1,1,1,1)
+plot2D({"En"},{"Au"},{0},{0.15},{9.999},{1,2},"Yield",500,1,1,1,1)
+plot2D({"En"},{"Au"},{0},{0.15},{9.999},{1,2},"Yield",2000,1,1,1)
+plot2D({"En"},{"Au"},{0},{0.15},{9.999},{1,2},"Yield",1000,1,1,1)
+plot2D({"En"},{"Au"},{0},{0.15},{9.999},{1,2},"Yield",100,1,1,1)
+.x Plot2DHisto.cc+
+plot2D({"En"},{"Au"},{0},{0.15},{9.999},{1,2},"Yield",100,1,1,1)
+plot2D({"En"},{"Au"},{0},{0.15},{9.999},{1,2},"Yield",1000,1,1,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/En_Au_Yield_v01")
+

@@ -1,0 +1,36 @@
+#!/bin/bash
+source ../GeneralFun/GeneralDefinitions.sh
+source /afs/cern.ch/work/v/valcayne/2026_Sm/GeneralFun/GeneralDefinitions.sh
+
+Run=$1
+echo "Start $Run"
+
+echo "${FolderOnLXPLUS}/GainMonitoring/GainMonitoring01 AllRuns ${RefRunGainShift_SILI} ${FolderOnLXPLUS}/GainMonitoring/inputs/GainMon01/inp01_SILI.inp $Run $Run"
+${FolderOnLXPLUS}/GainMonitoring/GainMonitoring01 AllRuns ${RefRunGainShift_SILI} ${FolderOnLXPLUS}/GainMonitoring/inputs/GainMon01/inp01_SILI.inp $Run $Run
+
+
+echo "${FolderOnLXPLUS}/GainMonitoring/GainMonitoring01 Y ${RefRunGainShift_C6D6_Y} ${FolderOnLXPLUS}/GainMonitoring/inputs/GainMon01/inp01_C6D6_Y.inp $Run $Run"
+${FolderOnLXPLUS}/GainMonitoring/GainMonitoring01 Y ${RefRunGainShift_C6D6_Y} ${FolderOnLXPLUS}/GainMonitoring/inputs/GainMon01/inp01_C6D6_Y.inp $Run $Run
+
+
+echo "${FolderOnLXPLUS}/GainMonitoring/GainMonitoring01 Cs ${RefRunGainShift_C6D6_Cs} ${FolderOnLXPLUS}/GainMonitoring/inputs/GainMon01/inp01_C6D6_Cs.inp $Run $Run"
+${FolderOnLXPLUS}/GainMonitoring/GainMonitoring01 Cs ${RefRunGainShift_C6D6_Cs} ${FolderOnLXPLUS}/GainMonitoring/inputs/GainMon01/inp01_C6D6_Cs.inp $Run $Run
+
+
+echo "${FolderOnLXPLUS}/GainMonitoring/GainMonitoring01 LABR_Cs ${RefRunGainShift_LABR_Cs} ${FolderOnLXPLUS}/GainMonitoring/inputs/GainMon01/inp01_LABR_Cs.inp $Run $Run ${RunListFnameLABR}"
+${FolderOnLXPLUS}/GainMonitoring/GainMonitoring01 LABR_Cs ${RefRunGainShift_LABR_Cs} ${FolderOnLXPLUS}/GainMonitoring/inputs/GainMon01/inp01_LABR_Cs.inp $Run $Run ${RunListFnameLABR}
+
+echo "${FolderOnLXPLUS}/GainMonitoring/GainMonitoring01 LABR_Y ${RefRunGainShift_LABR_Y} ${FolderOnLXPLUS}/GainMonitoring/inputs/GainMon01/inp01_LABR_Y.inp $Run $Run"
+${FolderOnLXPLUS}/GainMonitoring/GainMonitoring01 LABR_Y ${RefRunGainShift_LABR_Y} ${FolderOnLXPLUS}/GainMonitoring/inputs/GainMon01/inp01_LABR_Y.inp $Run $Run
+
+
+
+
+
+
+echo "end $Run"
+
+
+
+exit
+

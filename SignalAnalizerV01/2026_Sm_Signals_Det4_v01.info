@@ -1,0 +1,18 @@
+File with info
+mié 22 abr 2026 16:36:57 CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/SignalAnalizerV01
+
+Last Root commands
+TFile *_file0 = TFile::Open("2026_Sm_Signals_Det2.root")
+c1->Draw()
+SaveRootEpsPngTxt(c1,"2026_Sm_Signals_Det2_v01")
+.q
+TFile *_file0 = TFile::Open("2026_Sm_Signals_Det3.root")
+SaveRootEpsPngTxt(c1,"2026_Sm_Signals_Det3_v01")
+.q
+TFile *_file0 = TFile::Open("2026_Sm_Signals_Det4.root")
+c1->Draw()
+SaveRootEpsPngTxt(c1,"2026_Sm_Signals_Det4_v01")
+

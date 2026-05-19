@@ -1,0 +1,71 @@
+#!/bin/bash
+
+
+
+#####################################################################################
+Forma uno 
+#####################################################################################
+
+# Creo los histogramas sin GainCalibrated
+DoManyMake2DHisto 
+DoManyMake2DHisto GainCorrecteds
+
+
+
+
+#####################################################################################
+Forma uno 
+#####################################################################################
+
+# Creo los histogramas sin GainCalibrated
+DoManyMake2DHisto 
+
+
+
+
+RunMin=124062
+RunMax=124300
+
+
+# Calculo el cambio de ganancia
+ cd ../GainMonitoring/
+DoManyGainCorrecting  $RunMin $RunMax
+DoManyGainCorrecting  $RunMin23 $RunMax23
+
+cd ../Make2DHistos/
+
+# Creo el fichero de calibracion par cada run
+folder=/afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/Calibration/
+folder=/media/victor93/Elements/Valcayne/ExperimentData_Outputs/2026_Sm/Calibration/
+folder=/home/victor93/ExperimentsData/2026_Sm/Calibration/
+
+../GainMonitoring/CreateCalibFiles01 ${folder}/CalibrationRunByRunGainCorrectedv01/ ${folder}/CalibrationRunByRunGainCorrectedv01// ${folder}/../GainMonitoring/v01 SILI 1 AllRuns 118885 $RunMin $RunMax
+../GainMonitoring/CreateCalibFiles01 ${folder}/CalibrationRunByRunGainCorrectedv01/ ${folder}/CalibrationRunByRunGainCorrectedv01// ${folder}/../GainMonitoring/v01 SILI 2 AllRuns 118885 $RunMin $RunMax
+../GainMonitoring/CreateCalibFiles01 ${folder}/CalibrationRunByRunGainCorrectedv01/ ${folder}/CalibrationRunByRunGainCorrectedv01// ${folder}/../GainMonitoring/v01 SILI 3 AllRuns 118885 $RunMin $RunMax
+../GainMonitoring/CreateCalibFiles01 ${folder}/CalibrationRunByRunGainCorrectedv01/ ${folder}/CalibrationRunByRunGainCorrectedv01// ${folder}/../GainMonitoring/v01 SILI 4 AllRuns 118885 $RunMin $RunMax1
+../GainMonitoring/CreateCalibFiles01 ${folder}/CalibrationRunByRunGainCorrectedv01/ ${folder}/CalibrationRunByRunGainCorrectedv01// ${folder}/../GainMonitoring/v01 C6D6 1 Y 118876 $RunMin $RunMax
+../GainMonitoring/CreateCalibFiles01 ${folder}/CalibrationRunByRunGainCorrectedv01/ ${folder}/CalibrationRunByRunGainCorrectedv01// ${folder}/../GainMonitoring/v01 C6D6 2 Y 118876 $RunMin $RunMax
+../GainMonitoring/CreateCalibFiles01 ${folder}/CalibrationRunByRunGainCorrectedv01/ ${folder}/CalibrationRunByRunGainCorrectedv01// ${folder}/../GainMonitoring/v01 C6D6 3 Y 118876 $RunMin $RunMax
+../GainMonitoring/CreateCalibFiles01 ${folder}/CalibrationRunByRunGainCorrectedv01/ ${folder}/CalibrationRunByRunGainCorrectedv01// ${folder}/../GainMonitoring/v01 C6D6 4 Y 118876 $RunMin $RunMax
+
+
+
+#Miras que esta todo bien
+
+
+root -l ../GainMonitoring/plot01.hh+
+plot01("AllRuns", "SILI", 1, 2, 3, 4,true,"/afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/GainMonitoring/v01/Plot_SILI");
+plot01("Y", "C6D6", 1,2,3,4,true,"/afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/GainMonitoring/v01/Plot_C6D6.png");
+
+
+
+# Creo los histogramas con GainCalibrated
+DoManyMake2DHisto GainCorrected
+
+
+#####################################################################################
+Forma dos 
+#####################################################################################
+DoManyMake2DHisto GainCorrecting
+
+

@@ -1,0 +1,18 @@
+File with info
+Thu 23 Apr 2026 10:47:16 AM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+plot2D({"Edep"},{"Ba_8","Ba_11"}, {1},{0.15},{9.999}, {3}, "CR", {1}, 1,1,0);
+plot2D({"Edep"},{"Ba_8","Ba_11"}, {1},{0.15},{9.999}, {3}, "CR", {1}, 1,0,0);
+plot2D({"DeltaTOF"}, {"Au13_3","Au13_2","Au13_1"}, {1,2,3,4}, {1}, {9.999}, {1}, "CPulse",10)
+plot2D({"DeltaTOF"}, {"Au13_3","Au13_2","Au13_1"}, {1,2,3,}, {1}, {9.999}, {1}, "CPulse",10)
+plot2D({"DeltaTOF"}, {"Au13_3","Au13_2","Au13_1"}, {1}, {0.15}, {9.999}, {1}, "CPulse",10)
+plot2D({"DeltaTOF"}, {"Au13_3","Au13_2","Au13_1"}, {1}, {0.15}, {9.999}, {1}, "CPulse",10)
+plot2D({"DeltaTOF"}, {"Au13_3","Au13_2","Au13_1"}, {1}, {0.15}, {9.999}, {1}, "CPulse",10)
+SaveRootEpsPngTxt(c1,"ResultsPlot/DeltaTOF/Au13_Det1_v01")
+plot2D({"DeltaTOF"}, {"Au13_3","Au13_2","Au13_1"}, {2,3,4}, {0.15}, {9.999}, {1}, "CPulse",10)
+SaveRootEpsPngTxt(c1,"ResultsPlot/DeltaTOF/Au13_Det2_3_4_v01")
+

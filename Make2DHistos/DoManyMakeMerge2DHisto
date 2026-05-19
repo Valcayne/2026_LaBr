@@ -1,0 +1,193 @@
+#!/bin/bash
+
+
+Arguments=Condor/Inputs/ArgumentsForCondorMerge2DHistos.txt
+rm $Arguments
+
+ echo -e " AllRuns \n AllRuns_NoFilters ">>$Arguments 
+ echo -e " AllRuns_NoFilters_0 \n AllRuns_NoFilters_1 \n AllRuns_NoFilters_2 \n AllRuns_NoFilters_3 \n AllRuns_NoFilters_4 \n AllRuns_NoFilters_5 ">>$Arguments 
+ echo -e " AllRuns_NoFilters_6 \n AllRuns_NoFilters_7 \n AllRuns_NoFilters_8   \n AllRuns_NoFilters_9  \n AllRuns_NoFilters_10  ">>$Arguments 
+ echo -e " AllRuns_NoFilters_11 \n AllRuns_NoFilters_12 \n AllRuns_NoFilters_13   \n AllRuns_NoFilters_14  \n AllRuns_NoFilters_10  ">>$Arguments 
+ echo -e " Feb-5 \n Feb-16 \n Feb-25 \n Mar-8 \n Mar-18 \n Mar-28 \n Apr-7 \n Apr-15 \n Apr-24">>$Arguments 
+ echo -e " Y \n Cs \n Ba \n CmC \n AmBe  \n Background ">>$Arguments 
+ echo -e " Empty \n  Empty_Al \n C \n Au \n Pb \n Pb_Al \n Bi">>$Arguments 
+ echo -e " Mo100 \n Mo100_Al">>$Arguments 
+ echo -e " Mo92 \n Mo92_Al">>$Arguments 
+ echo -e " SbNat \n Sb121 \n Sb123 \n Sb123_Al ">>$Arguments 
+ echo -e " Er164_Thick \n Empty_Er \n Au13_Mis  \n Au13 \n Au13_1 \n Au13_2 \n Au13_3 \n Au13_4 \n Au48 \n Er164_Thin \n Er164_Thick_Al ">>$Arguments 
+ echo -e " Empty \n Empty_Al \n Empty_Bi ">>$Arguments 
+ echo -e " Au25 \n SmNat_5um ">>$Arguments 
+ echo -e " Au_1 \n Au_2 \n Au_3 \n Au_4 \n Au_5 \n  Au_6 \n Au_7 \n Au_8 ">>$Arguments 
+ echo -e " Pb208_1mm  \n Pb206_5mm \n PbNat_2mm ">>$Arguments 
+ echo -e " Sm147_Thick \n Sm147_Thick_Al \n Sm147_Thick_Bi ">>$Arguments 
+ echo -e " Sm149_Thick \n Sm149_Thick_Al \n Sm149_Thick_Bi ">>$Arguments 
+ echo -e " SmNat_Thick \n SmNat_5um_13mm ">>$Arguments 
+ echo -e " Sm152_Thick \n Sm152_Thick_Al \n Sm152_Thick_Bi">>$Arguments 
+ echo -e " Empty_Thin \n SmNat_Thin \n Sm147_Thin \n Sm147_Thin_2 \n Sm149_Thin \n Sm152_Thin ">>$Arguments 
+ echo -e " Co_11 \n Mn_11 \n Bi_11 \n Eu_11 \n Background_LightOn">>$Arguments 
+ for i in {1..17};do
+     echo -e " Y_${i} \n Au_${i} \n Cs_${i} \n CmC_${i} \n AmBe_${i} \n Background_${i} \n Ba_${i} ">>$Arguments
+ done
+
+
+
+
+
+# echo -e "LABR_Background" >> $Arguments
+
+# echo -e "LABR_Empty_Far \n LABR_Empty_Far \n LABR_Empty_Far \n LABR_Empty_Far" >> $Arguments
+# echo -e "LABR_Empty_BiFilter_Far" >> $Arguments
+
+# echo -e "LABR_Eu \n LABR_Eu_1 \n LABR_Eu_2 \n LABR_Eu_3" >> $Arguments
+# echo -e "LABR_Cs \n LABR_Cs_1 \n LABR_Cs_2 \n LABR_Cs_3 \n LABR_Cs_4" >> $Arguments
+# echo -e "LABR_Y \n LABR_Y_1 \n LABR_Y_2 \n LABR_Y_3" >> $Arguments
+# echo -e "LABR_CmC \n LABR_CmC_1 \n LABR_CmC_2 \n LABR_CmC_3" >> $Arguments
+
+# echo -e "LABR_Pb208_Far \n LABR_Pb208_Filter_Far" >> $Arguments
+# echo -e "LABR_Pb206_Far \n LABR_Pb206" >> $Arguments
+
+# echo -e "LABR_natBi2_Far \n LABR_natBi2" >> $Arguments
+
+# echo -e "LABR_natPb" >> $Arguments
+
+
+
+condor_submit Condor/ProgramsLaunch/LaunchCondorMergeMake2D.sh
+
+
+
+exit
+
+
+
+#echo "EmptyTimePiX">>${Arguments}
+echo "Y">>${Arguments}
+echo "Cs">>${Arguments}
+echo "Background">>${Arguments}
+echo "Empty_Er">>${Arguments}
+echo "C_2_6000">>${Arguments}
+
+echo "AmBe_1">>${Arguments}
+echo "Cs_1">>${Arguments}
+echo "Co_1">>${Arguments}
+echo "Eu_1">>${Arguments}
+echo "Bi_1">>${Arguments}
+echo "Mn_1">>${Arguments}
+echo "CmC_1">>${Arguments}
+echo "Ba_1">>${Arguments}
+echo "Co57_1">>${Arguments}
+echo "Y_1">>${Arguments}
+echo "Background_1">>${Arguments}
+
+
+echo "Au_13_100">>${Arguments}
+echo "Au_40_200">>${Arguments}
+echo "Au_40_100">>${Arguments}
+
+echo "Er167_13">>${Arguments}
+
+
+echo "Co57_AllDet_2">>${Arguments}
+echo "Co57_Det1_2">>${Arguments}
+echo "Co57_Det2_2">>${Arguments}
+echo "Y_2">>${Arguments}
+echo "AmBe_2">>${Arguments}
+echo "Cs_2">>${Arguments}
+echo "Background_2">>${Arguments}
+
+echo "Er167_13_FilterBi">>${Arguments}
+echo "Er167_13_FilterS">>${Arguments}
+echo "Er166_13">>${Arguments}
+echo "Ba_3">>${Arguments}
+echo "Y_3">>${Arguments}
+echo "AmBe_3">>${Arguments}
+echo "Cs_3">>${Arguments}
+echo "Background_3">>${Arguments}
+echo "Er166_13_FilterBi">>${Arguments}
+echo "Er166_13_FilterS">>${Arguments}
+echo "Er166_13_FilterS">>${Arguments}
+echo "ErNat_13">>${Arguments}
+echo "Pb_13">>${Arguments}
+echo "Y_4">>${Arguments}
+echo "Cs_4">>${Arguments}
+echo "AmBe_4">>${Arguments}cd .
+echo "Background_4">>${Arguments}
+echo "C_2_1000">>${Arguments}
+echo "C_2_1000_LowIntensity">>${Arguments}
+echo "Empty_Er_FilterBi">>${Arguments}
+echo "Empty_Er_FilterS">>${Arguments}
+echo "Au-20-100">>${Arguments}
+
+echo "Cu63">>${Arguments}
+echo "Cu63_SFilter">>${Arguments}
+echo "Cu65">>${Arguments}
+echo "Empty01_Cu">>${Arguments}
+
+echo "Carbon-20-635">>${Arguments}
+echo "Carbon-20-635_CdFilter">>${Arguments}
+echo "Carbon-20-635_SFilter">>${Arguments}
+echo "Pb-20-21">>${Arguments}
+echo "Pb-20-21_SFilter">>${Arguments}
+echo "Pb-20-21_CdFilter">>${Arguments}
+echo "Pb-45-1">>${Arguments}
+echo "Empty01_CdFilter">>${Arguments}
+echo "Cs137">>${Arguments}
+echo "Y88">>${Arguments}
+echo "AmBe">>${Arguments}
+echo "CmC">>${Arguments}
+echo "NoBeam-no">>${Arguments}
+echo "NoBeam">>${Arguments}
+
+echo "Au-40-100">>${Arguments}
+echo "Au-40-100_BiFilter">>${Arguments}
+echo "Au-40-100_SFilter">>${Arguments}
+echo "Empty01_U">>${Arguments}
+echo "Mal">>${Arguments}
+
+echo "U238">>${Arguments}
+echo "U238-NoBeam">>${Arguments}
+echo "U238_CoAgMoWFilter">>${Arguments}
+echo "U238_SFilter">>${Arguments}
+echo "U238_BiFilter">>${Arguments}
+echo "U238_AlFilter">>${Arguments}
+echo "Empty_AlFilter">>${Arguments}
+echo "NoBeam_U238Bunker">>${Arguments}
+echo "C_U238_AlFilter">>${Arguments}
+echo "Pb_U238_AlFilter">>${Arguments}
+echo "Pb_U238">>${Arguments}
+echo "Pb_U238_CoAgMoWFilter">>${Arguments}
+echo "C_U238">>${Arguments}
+echo "Empty_U238">>${Arguments}
+echo "Empty_U238_CoAgMoWFilter">>${Arguments}
+echo "Dummy_Unat">>${Arguments}
+echo "Unat_12mg">>${Arguments}
+echo "Unat_12mg_NoBeam">>${Arguments}
+echo "Unat_48mg_NoBeam">>${Arguments}
+echo "Unat_48mg">>${Arguments}
+echo "Pb_U238_BiFilter">>${Arguments}
+echo "Au-40-100_AlFilter">>${Arguments}
+
+
+
+echo "Y_5">>${Arguments}
+echo "Y_6">>${Arguments}
+echo "Y_7">>${Arguments}
+echo "Y_8">>${Arguments}
+echo "Y_9">>${Arguments}
+echo "Y_10">>${Arguments}
+echo "Y_11">>${Arguments}
+echo "Y_12">>${Arguments}
+echo "Y_13">>${Arguments}
+echo "Y_14">>${Arguments}
+echo "Y_15">>${Arguments}
+
+more $Arguments
+condor_submit Condor/ProgramsLaunch/LaunchCondorMergeMake2D.sh
+
+
+
+
+
+
+exit
+

@@ -1,0 +1,18 @@
+File with info
+lun 27 abr 2026 15:12:28 CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+plot2D({"DeltaTOF"}, {"Mo100","Sm152_Thick","Sm147_Thick","Sm149_Thick","Y"}, {1}, {0.15},{20}, {0}, "Counts",1)
+plot2D({"DeltaTOF"}, {"Mo100","Sm152_Thick","Sm147_Thick","Sm149_Thick","Y"}, {1}, {0.15},{20}, {0}, "CPulse",1)
+plot2D({"DeltaTOF"}, {"Mo100","Sm152_Thick","Sm147_Thick","Sm149_Thick","Sb121"}, {1}, {0.15},{20}, {0}, "CPulse",1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/DeltaTOF/Various_Det1_AfterPulseShape124805_v01")
+plot2D({"DeltaTOF"}, {"Y_11","Y_12","Y_13"}, {1}, {0.15},{20}, {0}, "CPulse",4)
+SaveRootEpsPngTxt(c1,"ResultsPlot/DeltaTOF/Y_Det1_AfterPulseShape124805_v01")
+plot2D({"DeltaTOF"}, {"Au13_1","Au13_2","Au13_3"}, {2}, {0.15},{20}, {0}, "CPulse",4)
+plot2D({"DeltaTOF"}, {"Au13_1","Au13_2","Au13_3"}, {2}, {0.15},{20}, {0}, "CPulse",10)
+plot2D({"DeltaTOF"}, {"Au13_1","Au13_2","Au13_3"}, {2}, {0.15},{20}, {0}, "CPulse",10)
+SaveRootEpsPngTxt(c1,"ResultsPlot/DeltaTOF/Au_Det1_AfterPulseShape124805_v01")
+

@@ -1,0 +1,42 @@
+#!/bin/bash
+
+source ../GeneralFun/GeneralDefinitions.sh
+
+Arguments=Condor/ArgumentsForCondor.txt
+rm $Arguments
+
+
+CreateCalibFiles01 ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ SILI 1 AllRuns ${RefRunGainShift_SILI} $RunMin $RunMax 
+CreateCalibFiles01 ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ SILI 2 AllRuns ${RefRunGainShift_SILI} $RunMin $RunMax 
+CreateCalibFiles01 ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ SILI 3 AllRuns ${RefRunGainShift_SILI} $RunMin $RunMax 
+CreateCalibFiles01 ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ SILI 4 AllRuns ${RefRunGainShift_SILI} $RunMin $RunMax 
+
+CreateCalibFiles01 ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ C6D6 1 Y ${RefRunGainShift_C6D6_Y} $RunMin $RunMax 
+CreateCalibFiles01 ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ C6D6 2 Y ${RefRunGainShift_C6D6_Y} $RunMin $RunMax     
+CreateCalibFiles01 ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ C6D6 3 Y ${RefRunGainShift_C6D6_Y} $RunMin $RunMax 
+CreateCalibFiles01 ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ C6D6 4 Y ${RefRunGainShift_C6D6_Y} $RunMin $RunMax 
+
+CreateCalibFiles01 ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ LABR 1 LABR_Cs ${RefRunGainShift_LABR_Cs} $RunMin $RunMax 
+CreateCalibFiles01 ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ LABR 2 LABR_Cs ${RefRunGainShift_LABR_Cs} $RunMin $RunMax 
+
+
+
+exit
+
+
+########## To run in lxplus
+echo ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ SILI 1 AllRuns ${RefRunGainShift_SILI} $RunMin $RunMax >>${Arguments}
+echo ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ SILI 2 AllRuns ${RefRunGainShift_SILI} $RunMin $RunMax >>${Arguments}
+echo ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ SILI 3 AllRuns ${RefRunGainShift_SILI} $RunMin $RunMax >>${Arguments}
+echo ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ SILI 4 AllRuns ${RefRunGainShift_SILI} $RunMin $RunMax >>${Arguments}
+
+echo ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ C6D6 1 Y ${RefRunGainShift_C6D6} $RunMin $RunMax >>${Arguments}
+echo ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ C6D6 2 Y ${RefRunGainShift_C6D6} $RunMin $RunMax >>${Arguments}    
+echo ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ C6D6 3 Y ${RefRunGainShift_C6D6} $RunMin $RunMax >>${Arguments}
+echo ${PathCalibrationsGain} ${PathCalibrationsGain} ${PathGainMonitoring}/ C6D6 4 Y ${RefRunGainShift_C6D6} $RunMin $RunMax >>${Arguments}
+
+
+
+condor_submit /afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/GainMonitoring/Condor/LaunchCondorCalibFile.sh
+exit
+

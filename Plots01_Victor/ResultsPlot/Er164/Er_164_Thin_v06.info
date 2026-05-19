@@ -1,0 +1,18 @@
+File with info
+Tue 24 Mar 2026 10:09:33 AM CET
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+.x Plot2DHisto.cc+
+ plot2D({"En_WF"}, {"Er164_Thin"}, {0}, {0.15}, {9.99}, {1}, "CP",10,1,1,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Er164/Er_164_Thin_v01")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Er164/Er_164_Thin_v01")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Er164/Er_164_Thin_v02")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Er164/Er_164_Thin_v03")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Er164/Er_164_Thin_v03")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Er164/Er_164_Thin_v04")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Er164/Er_164_Thin_v05")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Er164/Er_164_Thin_v06")
+

@@ -1,0 +1,18 @@
+File with info
+Sat 04 Apr 2026 10:18:27 AM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Plots01_Victor
+
+Last Root commands
+.@
+SaveRootEpsPngTxt(c1,"ResultsPlot/Flux/CompareDets_Until124660_v01")
+ plot2D({"En"}, {"AllRuns"}, {0}, {16e3}, {26e3}, {1}, "Yield",10,0,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Flux/CompareFlux_Until124660_v01")
+SaveRootEpsPngTxt(c1,"ResultsPlot/Flux/RatioCompareFlux_Until124660_v01")
+SaveRootEpsPngTxt(c2,"ResultsPlot/Flux/CompareFlux_Until124660_v01")
+.q
+.x Plot2DHisto.cc+
+ plot2D({"En"}, {"AllRuns"}, {0}, {16e3}, {26e3}, {1,2}, "Yield",10,0,1)
+SaveRootEpsPngTxt(c1,"ResultsPlot/Flux/RatioCompareFlux_Parasitic_Until124660_v01")
+

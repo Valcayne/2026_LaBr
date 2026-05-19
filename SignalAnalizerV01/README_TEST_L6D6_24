@@ -1,0 +1,20 @@
+
+
+
+
+/afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing_v02/ntof_prepare_processing_EM.py -d '/eos/ctapublicdisk/archive/ntof/2024/EAR1/Test_L6D6_New_PMT' -r 117900 -l 117960
+
+/afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing_v02/ntof_prepare_processing_EM.py -d '/eos/ctapublicdisk/archive/ntof/2024/EAR1/Test_L6D6_New_PMT' -r 117920 -l 117920
+
+
+/afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing_v02/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing_v02 /afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing_v02/UserInput/UserInput_2024_EAR1_L6D6Test_v0.2.h /eos/home-v/valcayne/nTOFDataProcessing/2024_Test_L6D6/RootFiles/v01
+
+
+
+
+
+xrdfs xroot://eosctapublicdisk.cern.ch/ ls /eos/ctapublicdisk/archive/ntof/2024/EAR1/Test_L6D6_New_PMT/117921/stream1
+xrdcp xroot://eosctapublicdisk.cern.ch////eos/ctapublicdisk/archive/ntof/2024/EAR1/Test_L6D6_New_PMT/117921/stream1/run117921_7_s1.raw.finished
+
+ SignalAnalyzer /media/victor93/Elements/Valcayne/ExperimentData_Outputs/Ta_Er/RawData/run117921_7_s1.raw.finished UserInput/UserInput_2024_EAR1_L6D6Test_v0.1.h &
+

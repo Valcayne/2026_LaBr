@@ -1,0 +1,55 @@
+S.DETECTOR SPECIFIC PARAMETERS(Lines may be commented with '#' sign !) == == ==
+    == == == == == == == == == == == == == == == == == == == == == == == == ==
+    == == == == == == == == == == == == == == == == == == == == == == == == ==
+    == == == == == == == == == == == == == == == == == == == == == == == == ==
+    == == == == == == == == == == == == == == == == == == == == == == == == ==
+    == == == == == == == == == ==
+    =
+        DETECTOR DETECTOR DETECTOR STEP TIMING MIXED EXPAND SMOOTHING TIME G
+        - FLASH G - FLASH G - FLASH G -
+        FLASH BASELINE BASELINE AMPLITUDE AMPLITUDE AREA / AMP.AREA /
+            AMP.SIGNAL WIDTH SIGNAL WIDTH NUMBER OF PULSE SHAPE NAME NUMBER
+            CLASS SIZE FILTER POLARITY PULSES FILTER LIMIT OPTION THRESHOLD
+            MIN_WIDTH WINDOW
+            OPTION FILTER OPTION THRESHOLD LOW THR.HIGH THR.LOW THR.HIGH THR.PULSE SHAPES ADDRESS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PKUP
+            0 PSA 300 /
+            6 0 0 3 50 100000 0 300 1 0 -
+        1 300 0 300 0.0 1000 1 4000 0
+
+            SILI 1 PSA 500 0 0 0 0 1e9 /
+            1e9 0 500. 0. 0 1 /
+            70 1e4 1 200 300 2000 500 4000 0 SILI 2 PSA 500 0 0 0 0 1e9 /
+            1e9 0 500. 0. 0 1 /
+            70 1e4 1 200 300 2000 500 4000 0 SILI 3 PSA 500 0 0 0 0 1e9 /
+            1e9 0 500. 0. 0 1 /
+            70 1e4 1 200 300 2000 500 4000 0 SILI 4 PSA 500 0 0 0 0 1e9 /
+            1e9 0 500. 0. 0 1 /
+            70 1e4 1 200 300 2000 500 4000 0
+
+            sTED 1 PSA 6 0 0 0 0 12.0e3 /
+            20e3 0 1000. 100 0 5 1000 / 0.01 2 12 0.1 5000 2 200 1 UserInput /
+            f_Shape_sTED_1_Amp100_100000_2024_v1.dat sTED 2 PSA
+            6 0 0 0 0 12.0e3 /
+            20e3 0 1000. 100 0 5 1000 / 0.01 2 12 0.1 5000 2 200 1 UserInput /
+            f_Shape_sTED_2_Amp100_100000_2024_v1.dat sTED 3 PSA
+            6 0 0 0 0 12.0e3 /
+            20e3 0 1000. 100 0 5 1000 / 0.01 2 12 0.1 5000 2 200 1 UserInput /
+            f_Shape_sTED_3_Amp100_100000_2024_v1.dat sTED 4 PSA
+            6 0 0 0 0 12.0e3 /
+            20e3 0 1000. 100 0 5 1000 / 0.01 2 12 0.1 5000 2 200 1 UserInput /
+            f_Shape_sTED_4_Amp100_100000_2024_v1.dat sTED 5 PSA
+            6 0 0 0 0 12.0e3 /
+            20e3 0 1000. 100 0 5 1000 / 0.01 2 12 0.1 5000 2 200 1 UserInput /
+            f_Shape_sTED_5_Amp100_100000_2024_v1.dat sTED 6 PSA
+            6 0 0 0 0 12.0e3 /
+            20e3 0 1000. 100 0 5 1000 / 0.01 2 12 0.1 5000 2 200 1 UserInput /
+            f_Shape_sTED_6_Amp100_100000_2024_v1.dat sTED 7 PSA
+            6 0 0 0 0 12.0e3 /
+            20e3 0 1000. 100 0 5 1000 / 0.01 2 12 0.1 5000 2 200 1 UserInput /
+            f_Shape_sTED_7_Amp100_100000_2024_v1.dat sTED 8 PSA
+            6 0 0 0 0 12.0e3 /
+            20e3 0 1000. 100 0 5 1000 / 0.01 2 12 0.1 5000 2 200 1 UserInput /
+            f_Shape_sTED_8_Amp100_100000_2024_v1.dat sTED 9 PSA
+            6 0 0 0 0 12.0e3 /
+            20e3 0 1000. 100 0 5 1000 / 0.01 2 12 0.1 5000 2 200 1 UserInput
+            / f_Shape_sTED_9_Amp100_100000_2024_v1.dat

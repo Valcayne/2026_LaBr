@@ -1,0 +1,286 @@
+
+2026/04 new data processing
+
+ explained here: https://twiki.cern.ch/twiki/bin/view/NTOF/Lxplus
+
+ /eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c Sm_Campaign_2026 -o /eos/user/v/valcayne/nTOFDataProcessing/2026_Sm/RootFiles/v01 -p /eos/experiment/ntof/repositories/RAW2ROOT/UserInput/2026/UserInput_2026_EAR1_Capture_v1.h -r 124649 -l 124652
+ /eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c Sb_Campaign_2026 -o /eos/user/v/valcayne/nTOFDataProcessing/2026_Sm/RootFiles/v01 -p /eos/experiment/ntof/repositories/RAW2ROOT/UserInput/2026/UserInput_2026_EAR1_Capture_v1.h -r 124590 -l 124609
+
+
+2026/03
+
+SignalAnalyzer ../DatosEnDiscoDuro/AverageSignal/v01/run124063_1_s1.raw.finished UserInput/UserInput_2026_EAR1_capture_v01_local.h 
+
+SignalAnalyzer ../DatosEnDiscoDuro/AverageSignal/v01/run124067_1_s1.raw.finished UserInput/UserInput_2026_EAR1_capture_v01.h 
+
+
+
+source /home/victor93/Programs/root_v6.22.08.source/root-6.22.08-build/bin/thisroot.sh #Es para que se abra root
+o
+source /home/victor93/Programs/root_v6.30.06/root-6.30.06_SOURCE/build/bin/thisroot.sh #Es para que se abra root
+
+
+
+SignalAnalyzer ../../../ExperimentData_Outputs/2024_MAREX/Rootfiles/run218438_7_s1.raw.finished UserInput/UserInput_2024_EAR2_MAREX_v1_Local.h&
+
+SignalAnalyzer
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+03/2024 Voy a ajustar bien los paremetros para procesar los datos de los BICRON y los sted 
+
+La nueva version del los parametros UserInput/UserInput_2023_EAR1_TaEr_v0.4_PKUP.h &
+Respecto a la versión tres solo he cambiado la parte de altas energias (20-1 MeV) y para algun detector he cambiado un poco el stepsize para que no se detecten tantas señales en algunos detectores.
+
+Det1. Es un detector que al estar más cerca del haz sufre mas por el G-flash. Es el detector que mas ruido tiene . El limite esta en 2 MeV por encima a veces no se reconstruye bien la baseline. He tocado un poco el 6/5 para que no me detecte tantas cosa como señal 
+
+Det 2. Es el que mejor funciona. Llega bien hasta 9 MeV y la baseline se calcula bien
+
+
+
+Det3 . Tiene mas ruido que el 2 y se ven más señales a altas energías . Para estar seguro he puesto que vale hasta 6 pero igual puede valer hasta 9 
+
+Det 4 5 6, van muchisimo mejor que lso BICRON. A altas energías (50 MeV) parece que se ven oscilaciones. Pero igual se puede mejroar un poco en caso de que sea necesario jeje.
+
+ 
+
+
+
+
+
+
+
+
+Energía no señal: es la energía hasta la qu tengo puesto una baselien con un pasoa muy fino, lo qu queire decir que las señales se fitean como baseline. esto es necesario hacerlo para que no fitee señales en el gamma flash y despues como tiene un rebote a 1us este afecte a la baseline. Las posible señales en esta energía no valen para nada. 
+ 
+
+        Energía no señal   Energia me creo   
+Det 1        9  MeV              2 MeV        
+Det 2        20 MeV              9 MeV         
+Det 3        20 MeV              6 MeV         
+Det 4 5 6    85 MeV              30 MeV         
+/media/victor93/Elements/Valcayne/ExperimentData_Outputs/Ta_Er/RawData/Ta_4_500_run115568_1_s1.raw.finished UserInput/UserInput_2023_EAR1_TaEr_v0.4_PKUP.h &
+
+
+
+##################### Ta_Er
+
+xrdcp xroot://eosctapublicdisk.cern.ch///eos/ctapublicdisk/archive/ntof/2023/EAR1/Ta_Er_Campaign/115539/stream1/run115539_1_s1.raw.finished
+
+xrdfs xroot://eosctapublicdisk.cern.ch/ ls /eos/ctapublicdisk/archive/ntof/2023/EAR1/Ta_Er_Campaign/115539/stream
+
+/afs/cern.ch/user/n/ntofuser/public/SignalAnalyzer  run115539_1_s1.raw.finished UserInput/UserInput_EAR1_TaEr_LOCAL_v01.h &
+
+
+
+/afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing /afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing/UserInput/UserInput_EAR1_TaEr_LOCAL_v02.h /eos/home-v/valcayne/nTOFDataProcessing/2023_Ta_Er/RootFiles/v02
+
+
+
+/afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing /afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing/UserInput/UserInput_EAR1_TaEr_LOCAL_v03.h /eos/home-v/valcayne/nTOFDataProcessing/2023_Ta_Er/RootFiles/v03
+
+
+
+
+
+/afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing /afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing/UserInput/UserInput_2023_EAR1_TaEr_v0.3_PKUP.h /eos/home-v/valcayne/nTOFDataProcessing/2023_Ta_Er/RootFiles/v03
+
+
+
+
+
+
+/afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing /afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing/UserInput/UserInput_2023_EAR1_TaEr_v0.3.h /eos/home-v/valcayne/nTOFDataProcessing/2023_Ta_Er/RootFiles/v04
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##################### sTED ELAB
+
+xrdcp xroot://eosctapublicdisk.cern.ch///eos/ctapublicdisk/archive/ntof/2023/LAB/B6D6_Test_Ta_Er/921755/stream1/run921755_0_s1.raw.finished
+
+
+
+ xrdfs xroot://eosctapublicdisk.cern.ch/ ls /eos/ctapublicdisk/archive/ntof/2023/LAB/B6D6_Test_Ta_Er/921755/stream1
+
+
+
+
+
+
+/afs/cern.ch/user/n/ntofuser/public/SignalAnalyzer run921755_0_s1.raw.finished UserInput/UserInput_EAR2_CmMeas_v10LOCAL.h
+
+
+
+/afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing /afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing/UserInput/UserInput_EAR2_CmMeas_v10LOCAL.h /afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing
+
+
+/afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing /afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing/UserInput/UserInput_EAR2_CmMeas_v10LOCAL.h  /eos/home-v/valcayne/nTOFDataProcessing/2023_Ta_Er/RootFiles/Elab_v01
+
+
+
+/afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing /afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing/UserInput/UserInput_EAR2_CmMeas_v10LOCAL_LOWThhreshold.h  /eos/home-v/valcayne/nTOFDataProcessing/2023_Ta_Er/RootFiles/Elab_v01_LowThreshold
+
+
+
+
+/afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/Ta_Er/DataProcessing /afs/cern.ch/work/v/valcayne/public/Ta_Er/DataProcessing/UserInput/UserInput_EAR2_CmMeas_v10LOCAL.h /eos/home-v/valcayne/nTOFDataProcessing/2022_sTED_Mo/v02
+
+
+PrepareRunsToProcess 921756 921756
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+####################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+xrdcp xroot://eosctapublicdisk.cern.ch//eos/ctapublicdisk/archive/ntof/2022/EAR2/Mo_sTED/214408/stream1/run214408_9_s1.raw.finished .
+
+
+
+
+
+
+xrdcp xroot://eosctapublicdisk.cern.ch//eos/ctapublicdisk/archive/ntofmp/2022/EAR1/Pu239_Campaign/114394/stream1/run114394_153_s1.raw.finished .
+
+xrdfs xroot://eosctapublicdisk.cern.ch/ ls /eos/ctapublicdisk/archive/ntof/2022/EAR1/Pu239_Campaign/114396
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/30 * * * * lxplus.cern.ch /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/ProgramPorcessEM/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/sTED/DataProcessing/ProgramPorcessEM /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/UserInput/UserInput_2021_EAR2_RF_211900_211958v0.1.h /eos/home-v/valcayne/nTOFDataProcessing/2021_RF_EAR2/v01 auto > /afs/cern.ch/user/v/valcayne/Workspace/public/sTED/DataProcessing/ProgramPorcessEM/cronjob.out 2>&1
+
+
+
+afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/ProgramPorcessEM/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/sTED/DataProcessing/ProgramPorcessEM /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/UserInput/UserInput_2021_EAR2_RF_211959_212043v0.1.h /eos/home-v/valcayne/nTOFDataProcessing/2021_RF_EAR2/v01
+
+ /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/ProgramPorcessEM/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/sTED/DataProcessing/ProgramPorcessEM /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/UserInput/UserInput_2021_EAR2_Commissioning_v0.3_WithGammaFlash.h /eos/home-v/valcayne/nTOFDataProcessing/2021_CommisioningTest/v01
+
+
+
+ /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/ProgramPorcessEM/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/sTED/DataProcessing/ProgramPorcessEM /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/UserInput/UserInput_2021_EAR2_Commissioning_v0.3_WithGammaFlash.h /afs/cern.ch/user/v/valcayne/Workspace/public/sTED/DataProcessing/ProgramPorcessEM 
+
+
+ /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/ProgramPorcessEM/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/sTED/DataProcessing/ProgramPorcessEM /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/UserInput/UserInput_2021_EAR2_Commissioning_v0.3_WithGammaFlash.h /eos/home-v/valcayne/nTOFDataProcessing/2021_CommisioningTest/v01
+
+
+ /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/ProgramPorcessEM/cronjob_EM.sh /afs/cern.ch/user/v/valcayne/Workspace/public/sTED/DataProcessing/ProgramPorcessEM /afs/cern.ch/work/v/valcayne/public/sTED/DataProcessing/UserInput/UserInput_2021_EAR1_Test_sTED_v0.1.h  /eos/home-v/valcayne/nTOFDataProcessing/2021_Test_sTED_EAR1/v01
+
+/eos/home-v/valcayne/nTOFDataProcessing/2021_CommisioningTest/v01
+
+
+How to create the rootfiles with these scripts:
+
+1-
+[...]/ntof_prepare_processing_EM.py -d '/eos/ctapublicdisk/archive/ntof/2021/EAR2/Commissioning' -r 212022
+
+Or equivalent. Same as ntof_prepare_processing.py
+
+One can run more or less jobs by changing "MAXJOBS" inside "ntof_prepare_processing_EM.py"
+
+2-
+
+acrontab -e
+*/10 * * * * lxplus.cern.ch [scripts_dir]/cronjob_EM.sh [working_dir] [UserInputDir]/UserInput_2021_EAR2_Commissioning_v0.2.h [eos_outdir] auto > [working_dir]/cronjob.out 2>&1
+
+Example:
+acrontab -e
+*/10 * * * * lxplus.cern.ch /afs/cern.ch/user/e/emendoza/Test2021/EAR2/DSTProcessing/myscripts/cronjob_EM.sh /afs/cern.ch/user/e/emendoza/Test2021/EAR2/DSTProcessing /afs/cern.ch/user/e/emendoza/Test2021/EAR2/DSTProcessing/UserInputs/UserInput_2021_EAR2_Commissioning_v0.2.h /eos/home-e/emendoza/DSTProcessing auto > /afs/cern.ch/user/e/emendoza/Test2021/EAR2/DSTProcessing/cronjob.out 2>&1
+
+
+

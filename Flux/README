@@ -1,0 +1,43 @@
+
+
+###2026 04 for Sm
+
+El flujo de 2026 lo saco con  plot2D({"En"}, {"AllRuns_NoFilters"}, {0}, {16e3}, {30e3}, {0}, "Yield",5,0,1)
+
+Lo que hago es coger el flujo calculado con los datos de 2026 hasta el run 124660 y lo multiplico por el BIF de 13 y 20. 
+El BIF de 25mm cuadrado aun no se que hacer con el, 
+
+root -l Multiply_2Histo.cc+
+ multiplicarHistogramasInterpolados("Flux_2026_AllRuns_NoFilters_Until124680.root", "BIF_20mm_13mm_v02.root", "h1", "h13")
+
+ multiplicarHistogramasInterpolados("Flux_2026_AllRuns_NoFilters_Until124680.root", "BIF_20mm_13mm_v02.root", "h1", "h20")
+
+
+Therefore the final flux is in Flux_23_24_26_v01.root 
+
+And the names are 
+ Flux_26_AllRuns_NoFilters_Until124680_13mm
+ Flux_26_AllRuns_NoFilters_Until124680_20mm
+ Flux_26_AllRuns_NoFilters_Until124680
+ 
+
+Despues de hacer esto meto los nuevos histogramas en 
+
+Flux_23_24_26_Corected_v01.root
+Asi tengo los fluxes de 2026 y el 23 y el 24
+
+### 2025 - 11 for Er campaign
+
+In this folder some calculations for the RF would be performed.
+The flux have been calcualted for various samples with the TC. 
+
+/home/victor93/ExperimentsData/2024_Er_Cu_U/OpticalTransportCode_2024_Er_Cu_U/TC_Flux_8cm_EAR1_P4.root
+The the BIF have been calculated for a 2 cm sample, later the flux obtained for the campaign with the SIMON have been multuply with this BIF
+
+root -l Multiply_2Histo.cc+
+ multiplicarHistogramasInterpolados("Flux_23_24Corected.root", "BIF_2cm_EAR1.root", "Flux_24AllBeamRunsNoFilters_SILI", "h1")
+
+ multiplicarHistogramasInterpolados("Flux_23_24Corected_v01_TEST.root", "BIF_13mm.root", "Flux_24AllBeamRunsNoFilters_SILI", "h1")
+
+
+For EAR2 I do the same but now with a 13mm sample. An we obtain the file Flux_23_24Corected_v02.root

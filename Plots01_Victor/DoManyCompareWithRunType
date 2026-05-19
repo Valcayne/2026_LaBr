@@ -1,0 +1,20 @@
+#!/bin/bash
+
+source ../GeneralFun/GeneralDefinitions.sh
+
+Arguments=Condor/ArgumentsForCondor.txt
+rm $Arguments
+
+
+
+
+for (( number=$RunMin; number<=$RunMax; number++ )); do
+
+echo "$number"
+echo "$number">>${Arguments}
+#CompareWithRunType $number
+done
+
+condor_submit /afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/Plots01_Victor/Condor/LaunchCompareWithRunType.sh
+exit
+

@@ -1,0 +1,18 @@
+File with info
+Mon 06 Apr 2026 08:33:40 PM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_Sm/2026_Sm/Flux
+
+Last Root commands
+TFile *_file1 = TFile::Open("h24.root")
+TFile *_file2 = TFile::Open("h26.root")
+h26->Draw("histo")
+_file1->ls()
+_file1->cd()
+h24->Draw("histo same")
+_file0->ls()
+_file0->cd()
+h23->Draw("histo same")
+SaveRootEpsPngTxt(c1,"Compare_Thermal_23_24_26")
+

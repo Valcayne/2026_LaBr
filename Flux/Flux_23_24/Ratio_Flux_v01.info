@@ -1,0 +1,36 @@
+File with info
+Thu 08 May 2025 05:47:16 PM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2024_Er_U/ProgramsC6D6/Analysis_v01/Flux
+
+Last Root commands
+histfluka->Draw("histo")
+_file1->cd()
+histfluka->Draw("histo same")
+_file0->cd()
+histfluka->Draw("histo same")
+SaveRootEpsPngTxt(c1,"Compare_3_Flux_v01")
+h4->Divide(h8,1)
+h4->Divide(h8)
+h2->Divide(h8)
+SaveRootEpsPngTxt(c1,"Ratio_Flux_v01")
+
+File with info
+Thu 08 May 2025 05:47:49 PM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2024_Er_U/ProgramsC6D6/Analysis_v01/Flux
+
+Last Root commands
+_file1->cd()
+histfluka->Draw("histo same")
+_file0->cd()
+histfluka->Draw("histo same")
+SaveRootEpsPngTxt(c1,"Compare_3_Flux_v01")
+h4->Divide(h8,1)
+h4->Divide(h8)
+h2->Divide(h8)
+SaveRootEpsPngTxt(c1,"Ratio_Flux_v01")
+SaveRootEpsPngTxt(c1,"Ratio_Flux_v01")
+
