@@ -97,8 +97,8 @@ int main(int argc, char** argv) {
   HistoInfoLABR->HistoTitle.push_back("Edep");
   HistoInfoLABR->HistoType.push_back(1);
   HistoInfoLABR->Xaxis.push_back({100, 1.e-3, 1.e7});
-  // HistoInfoLABR->Yaxis.push_back({2e4, 0, 20});
-  HistoInfoLABR->Yaxis.push_back({2e4, 0, 2e4});
+  HistoInfoLABR->Yaxis.push_back({2e4, 0, 20});
+  // HistoInfoLABR->Yaxis.push_back({2e4, 0, 2e4});
 
   HistoInfoLABR->HistoName.push_back("En");
   HistoInfoLABR->HistoTitle.push_back("En");
