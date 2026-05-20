@@ -1,0 +1,25 @@
+
+#!/bin/bash
+#
+#First, you have to do:
+#  root -l
+#  root [1] .L EventViewer.cc++
+#root -l <<EOF1
+#.L CalibratorViewer.cc++
+#.q
+#EOF1
+
+#g++ -o TACCalibrator CalibratorViewer.cc `root-config --cflags --glibs` -lSpectrum CalibratorViewer_cc.so -DSTANDALONE
+
+#g++ -o TACCalibrator CalibratorViewer.cc `root-config --cflags --glibs --libs` -lSpectrum
+
+
+
+rootcint -f CalibratorViewerDict.cc -c -p CalibratorViewer.hh LinkDef.h 
+g++  `root-config --cflags` -c CalibratorViewerDict.cc CalibratorViewer.cc TACCalibrator.cc
+
+OBJ='CalibratorViewerDict.o CalibratorViewer.o TACCalibrator.o'
+
+g++  ${OBJ} `root-config --glibs` -o TACCalibrator -lSpectrum
+
+rm ${OBJ}

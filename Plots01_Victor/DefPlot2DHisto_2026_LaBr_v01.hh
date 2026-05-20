@@ -38,21 +38,11 @@ double FactorToMultyplySiliCountsToProtons =
 double TOFD = 183.88;
 // For subtract backgroudnSasd
 vector<string> MeasPredefined = {
-    "Predefined",     "Empty_Er",       "PbNat_2mm",      "Pb208_1mm",
-    "Sm147_Thick_Al", "Sm149_Thick_Al", "Sm152_Thick_Al", "Er164_Thick_Al",
-    "Sm147_Thick_Bi", "Sm149_Thick_Bi", "Sm152_Thick_Bi",
+    "Predefined",
 };
-vector<string> BackgroundMeasPredefined = {
-    "Background_2", "Background",   "Background_2", "Background_2",
-    "Background_2", "Background_2", "Background_2", "Background_2",
-    "Background_2", "Background_2", "Background_2"};
-vector<string> DummyPredefined = {
-    "Empty",    "Empty_Er", "Empty",    "Empty",    "Empty_Al", "Empty_Al",
-    "Empty_Al", "Empty_Al", "Empty_Bi", "Empty_Bi", "Empty_Bi"};
-vector<string> BackgroundDummyPredefined = {
-    "Background_2", "Background",   "Background_2", "Background_2",
-    "Background_2", "Background_2", "Background_2", "Background_2",
-    "Background_2", "Background_2", "Background_2"};
+vector<string> BackgroundMeasPredefined = {"Background_Det1_8"};
+vector<string> DummyPredefined = {"Empty"};
+vector<string> BackgroundDummyPredefined = {"Background_Det1_8"};
 
 // For GetSimul
 vector<string> NameSimulArray = {
@@ -268,8 +258,8 @@ double NormalizeMinEdep = 0.2;
 double NormalizeMaxEdep = 0.8;
 
 // Edep for the xaxis plot
-double ForPlotEminEdep = 0.5;
-double ForPlotEmaxEdep = 0.8;
+double ForPlotEminEdep = 1.2;
+double ForPlotEmaxEdep = 1.6;
 
 // For the Y axis of compare
 double MinYForCompare = 0.1;
