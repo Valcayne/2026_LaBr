@@ -1,0 +1,18 @@
+File with info
+Wed 20 May 2026 12:00:33 AM CEST
+
+Plot created in:
+/home/victor93/CmExperimentFolder/2026_LaBr/2026_LaBr/Plots01_Victor
+
+Last Root commands
+.x Plot2DHisto.cc+
+.x Plot2DHisto.cc+
+plot2D({"Edep"},{"Cs_1"}, {1,2},{0.15},{9.999}, {3}, "CR", {1},0,1);
+plot2D({"Edep"},{"Cs_1"}, {1,2,3,4,5,6,7,},{0.15},{9.999}, {3}, "CR", {1},0);
+.q
+.x Plot2DHisto.cc+
+plot2D({"Edep"},{"Cs_1"}, {1,2,3,4,5,6,7,},{0.15},{9.999}, {3}, "CR", {10},0);
+plot2D({"Edep"},{"Cs_1"}, {1,2,3,4,5,6,7,},{0.15},{9.999}, {3}, "CR", {4},0);
+plot2D({"Edep"},{"Cs_1"}, {1,2,3,4,5,6,7,},{0.15},{9.999}, {3}, "CR", {4},0,1);
+SaveRootEpsPngTxt(c1,"ResultsPlot/Gain_Cs_v01")
+

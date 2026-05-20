@@ -1,7 +1,7 @@
 
 # DO NOT DELETE
 
-./Plot2DHisto_cc.so: DefPlot2DHisto_2026_Sm_v01.hh
+./Plot2DHisto_cc.so: DefPlot2DHisto_2026_LaBr_v01.hh
 ./Plot2DHisto_cc.so: /home/victor93/Programs/root_v6.30.06.source/root-6.30.06/root_install/include/TCanvas.h
 ./Plot2DHisto_cc.so: /home/victor93/Programs/root_v6.30.06.source/root-6.30.06/root_install/include/TPad.h
 ./Plot2DHisto_cc.so: /home/victor93/Programs/root_v6.30.06.source/root-6.30.06/root_install/include/TVirtualPad.h

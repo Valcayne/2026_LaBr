@@ -4,8 +4,9 @@
 
  explained here: https://twiki.cern.ch/twiki/bin/view/NTOF/Lxplus
 
-/eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a LAB -c LABR_test -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01 -p /afs/cern.ch/work/v/valcayne/2026_LaBr/SignalAnalizerV01/UserInput/UserInput_2026_LAB_LaBr_v01.sh -r 922871 -l 922875
+/eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a LAB -c LABR_test -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01 -p /afs/cern.ch/work/v/valcayne/2026_LaBr/SignalAnalizerV01/UserInput/UserInput_2026_LAB_LaBr_v01.sh -r 922872 -l 922875
 
+/eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a LAB -c LABR_test -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01 -p /afs/cern.ch/work/v/valcayne/2026_LaBr/SignalAnalizerV01/UserInput/UserInput_2026_LAB_LaBr_v01.sh -r 922874 -l 922874
 
 
 
