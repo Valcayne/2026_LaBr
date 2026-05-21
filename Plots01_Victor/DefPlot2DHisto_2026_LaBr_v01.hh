@@ -258,7 +258,7 @@ double NormalizeMinEdep = 0.2;
 double NormalizeMaxEdep = 0.8;
 
 // Edep for the xaxis plot
-double ForPlotEminEdep = 1.2;
+double ForPlotEminEdep = 0.2;
 double ForPlotEmaxEdep = 1.6;
 
 // For the Y axis of compare
