@@ -1,6 +1,55 @@
 
 # `plot2D` Function Documentation
 
+
+plot2D({"Edep"},{"CsLow_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1")
+plot2D({"Edep"},{"CsLow_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {2},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det2")
+plot2D({"Edep"},{"CsLow_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {3},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det3")
+plot2D({"Edep"},{"CsLow_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {4},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det4")
+plot2D({"Edep"},{"CsLow_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {5},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det5")
+plot2D({"Edep"},{"CsLow_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {6},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det6")
+plot2D({"Edep"},{"CsLow_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {7},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det7")
+plot2D({"Edep"},{"CsLow_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {8},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det8")
+
+
+plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1_-20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {2},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det2_-20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {3},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det3_-20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {4},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det4_-20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {5},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det5_-20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {6},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det6_-20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {7},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det7_-20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {8},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det8_-20")
+
+
+
+
+plot2D({"Edep"},{"Cs_Low_Det1_8_+20","Cs_15cm_Det1_8_+20","Cs_30cm_Det1_8_+20","Cs_5cm_Det1_8_+20","Cs_Low_Det1_8_+20_v02","Cs_Low_Det1_8_+20_v03"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1_+20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_+20","Cs_15cm_Det1_8_+20","Cs_30cm_Det1_8_+20","Cs_5cm_Det1_8_+20","Cs_Low_Det1_8_+20_v02","Cs_Low_Det1_8_+20_v03"}, {2},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det2_+20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_+20","Cs_15cm_Det1_8_+20","Cs_30cm_Det1_8_+20","Cs_5cm_Det1_8_+20","Cs_Low_Det1_8_+20_v02","Cs_Low_Det1_8_+20_v03"}, {3},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det3_+20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_+20","Cs_15cm_Det1_8_+20","Cs_30cm_Det1_8_+20","Cs_5cm_Det1_8_+20","Cs_Low_Det1_8_+20_v02","Cs_Low_Det1_8_+20_v03"}, {4},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det4_+20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_+20","Cs_15cm_Det1_8_+20","Cs_30cm_Det1_8_+20","Cs_5cm_Det1_8_+20","Cs_Low_Det1_8_+20_v02","Cs_Low_Det1_8_+20_v03"}, {5},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det5_+20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_+20","Cs_15cm_Det1_8_+20","Cs_30cm_Det1_8_+20","Cs_5cm_Det1_8_+20","Cs_Low_Det1_8_+20_v02","Cs_Low_Det1_8_+20_v03"}, {6},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det6_+20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_+20","Cs_15cm_Det1_8_+20","Cs_30cm_Det1_8_+20","Cs_5cm_Det1_8_+20","Cs_Low_Det1_8_+20_v02","Cs_Low_Det1_8_+20_v03"}, {7},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det7_+20")
+plot2D({"Edep"},{"Cs_Low_Det1_8_+20","Cs_15cm_Det1_8_+20","Cs_30cm_Det1_8_+20","Cs_5cm_Det1_8_+20","Cs_Low_Det1_8_+20_v02","Cs_Low_Det1_8_+20_v03"}, {8},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det8_+20")
+
+
+
+
+
+
+
+
+
+
+
+ Merge2DHistos Cs_Low_Det1_8_-20; Merge2DHistos Cs_15cm_Det1_8_-20; Merge2DHistos Cs_30cm_Det1_8_-20; Merge2DHistos Cs_5cm_Det1_8_-20; Merge2DHistos Cs_Low_Det1_8_-20_v02; Merge2DHistos Cs_Low_Det1_8_-20_v03
+
+
+
+ Merge2DHistos Cs_Low_Det1_8_+20; Merge2DHistos Cs_15cm_Det1_8_+20; Merge2DHistos Cs_30cm_Det1_8_+20; Merge2DHistos Cs_5cm_Det1_8_+20; Merge2DHistos Cs_Low_Det1_8_+20_v02; Merge2DHistos Cs_Low_Det1_8_+20_v03
+
+
 This document describes the inputs and usage of the `plot2D` function for plotting 2D histograms.
 
 The program uses a definition file with all the inputs for plot.

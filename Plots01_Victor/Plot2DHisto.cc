@@ -541,15 +541,15 @@ void plot2D(std::vector<string> NameHisto, std::vector<string> MeasurementType,
 
       double shiftArray[NumberOfHisto];
       double shift;
-      for (auto i = 1; i < NumberOfHisto; i++) {
-        h1GainShift[i] = CalculateBestShift(
-            shift, h1[0], h1[i], NormalizeMinEdep, NormalizeMaxEdep,
-            NumberIterations, MinShift, MaxShift);
-        shiftArray[i] = shift;
-        TitleLegend[i] =
-            TitleLegend[i] + " G=" + doubleToDecimalString(shiftArray[i], 3);
-        cout << TitleLegend[i] << " Shift= " << shiftArray[i] << endl;
-      }
+      // for (auto i = 1; i < NumberOfHisto; i++) {
+      //   h1GainShift[i] = CalculateBestShift(
+      //       shift, h1[0], h1[i], NormalizeMinEdep, NormalizeMaxEdep,
+      //       NumberIterations, MinShift, MaxShift);
+      //   shiftArray[i] = shift;
+      //   TitleLegend[i] =
+      //       TitleLegend[i] + " G=" + doubleToDecimalString(shiftArray[i], 3);
+      //   cout << TitleLegend[i] << " Shift= " << shiftArray[i] << endl;
+      // }
     }
   }
 

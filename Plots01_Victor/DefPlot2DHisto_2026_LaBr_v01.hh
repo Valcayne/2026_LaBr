@@ -254,12 +254,12 @@ double ForPlotEmaxEn = 1e6;
 //    double ForPlotEminEn = 3;
 // double ForPlotEmaxEn = 7;
 // Edep for integrals normalize
-double NormalizeMinEdep = 0.2;
-double NormalizeMaxEdep = 0.8;
+double NormalizeMinEdep = 0.6;
+double NormalizeMaxEdep = 0.7;
 
 // Edep for the xaxis plot
-double ForPlotEminEdep = 0.2;
-double ForPlotEmaxEdep = 1.6;
+double ForPlotEminEdep = 0.6;
+double ForPlotEmaxEdep = 0.7;
 
 // For the Y axis of compare
 double MinYForCompare = 0.1;
@@ -267,7 +267,7 @@ double MaxYForCompare = 2;
 
 // For calculating gain shifts
 
-int NumberIterations = 200;
+int NumberIterations = 50;
 double MinShift = 0.9;
 double MaxShift = 1.1;
 

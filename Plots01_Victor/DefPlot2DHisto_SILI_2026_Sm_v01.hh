@@ -88,7 +88,7 @@ double MaxYForCompare = 2;
 
 // For calculating gain shifts
 
-int NumberIterations = 200;
+int NumberIterations = 50;
 double MinShift = 0.9;
 double MaxShift = 1.1;
 
