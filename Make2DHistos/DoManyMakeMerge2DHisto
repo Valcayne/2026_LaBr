@@ -4,30 +4,51 @@
 Arguments=Condor/Inputs/ArgumentsForCondorMerge2DHistos.txt
 rm $Arguments
 
- echo -e " AllRuns \n AllRuns_NoFilters ">>$Arguments 
- echo -e " AllRuns_NoFilters_0 \n AllRuns_NoFilters_1 \n AllRuns_NoFilters_2 \n AllRuns_NoFilters_3 \n AllRuns_NoFilters_4 \n AllRuns_NoFilters_5 ">>$Arguments 
- echo -e " AllRuns_NoFilters_6 \n AllRuns_NoFilters_7 \n AllRuns_NoFilters_8   \n AllRuns_NoFilters_9  \n AllRuns_NoFilters_10  ">>$Arguments 
- echo -e " AllRuns_NoFilters_11 \n AllRuns_NoFilters_12 \n AllRuns_NoFilters_13   \n AllRuns_NoFilters_14  \n AllRuns_NoFilters_10  ">>$Arguments 
- echo -e " Feb-5 \n Feb-16 \n Feb-25 \n Mar-8 \n Mar-18 \n Mar-28 \n Apr-7 \n Apr-15 \n Apr-24">>$Arguments 
- echo -e " Y \n Cs \n Ba \n CmC \n AmBe  \n Background ">>$Arguments 
- echo -e " Empty \n  Empty_Al \n C \n Au \n Pb \n Pb_Al \n Bi">>$Arguments 
- echo -e " Mo100 \n Mo100_Al">>$Arguments 
- echo -e " Mo92 \n Mo92_Al">>$Arguments 
- echo -e " SbNat \n Sb121 \n Sb123 \n Sb123_Al ">>$Arguments 
- echo -e " Er164_Thick \n Empty_Er \n Au13_Mis  \n Au13 \n Au13_1 \n Au13_2 \n Au13_3 \n Au13_4 \n Au48 \n Er164_Thin \n Er164_Thick_Al ">>$Arguments 
- echo -e " Empty \n Empty_Al \n Empty_Bi ">>$Arguments 
- echo -e " Au25 \n SmNat_5um ">>$Arguments 
- echo -e " Au_1 \n Au_2 \n Au_3 \n Au_4 \n Au_5 \n  Au_6 \n Au_7 \n Au_8 ">>$Arguments 
- echo -e " Pb208_1mm  \n Pb206_5mm \n PbNat_2mm ">>$Arguments 
- echo -e " Sm147_Thick \n Sm147_Thick_Al \n Sm147_Thick_Bi ">>$Arguments 
- echo -e " Sm149_Thick \n Sm149_Thick_Al \n Sm149_Thick_Bi ">>$Arguments 
- echo -e " SmNat_Thick \n SmNat_5um_13mm ">>$Arguments 
- echo -e " Sm152_Thick \n Sm152_Thick_Al \n Sm152_Thick_Bi">>$Arguments 
- echo -e " Empty_Thin \n SmNat_Thin \n Sm147_Thin \n Sm147_Thin_2 \n Sm149_Thin \n Sm152_Thin ">>$Arguments 
- echo -e " Co_11 \n Mn_11 \n Bi_11 \n Eu_11 \n Background_LightOn">>$Arguments 
- for i in {1..17};do
-     echo -e " Y_${i} \n Au_${i} \n Cs_${i} \n CmC_${i} \n AmBe_${i} \n Background_${i} \n Ba_${i} ">>$Arguments
- done
+echo -e " \
+Cs_1 \
+Background_1 \
+Cs_2 \
+Cs_3 \
+Cs_4 \
+Cs137_Det1_8 \
+AmBe_Det1_8 \
+Background_Det1_8 \
+Co60_Det1_8 \
+Eu155_Det1_8 \
+Co60_Det1_8_v02 \
+Background_Det1_8_v02 \
+Cs137_Det1_8_17 \
+Eu152_Det1_8_17 \
+Co60_Det8_17 \
+Cs_Low_Det1_8 \
+Background_Det1_8 \
+Cs_15cm_Det1_8 \
+Cs_30cm_Det1_8 \
+Cs_60cm_Det1_8 \
+Cs_5cm_Det1_8 \
+Cs_Low_Det1_8_v02 \
+Cs_Low_Det1_8_-20 \
+Cs_15cm_Det1_8_-20 \
+Cs_30cm_Det1_8_-20 \
+Cs_5cm_Det1_8_-20 \
+Cs_Low_Det1_8_-20_v02 \
+Cs_Low_Det1_8_-20_v03 \
+Cs_Low_Det1_8_+20 \
+Cs_Low_Det1_8_+20_v02 \
+Cs_15cm_Det1_8_+20 \
+Cs_30cm_Det1_8_+20 \
+Cs_5cm_Det1_8_+20 \
+Cs_Low_Det1_8_+20_v03 \
+Cs_Low_Det9_16_SettingVoltage \
+Cs_Low_Det9_16 \
+Cs_15cm_Det9_16 \
+Cs_30cm_Det9_16 \
+Cs_5cm_Det9_16 \
+Cs_Low_Det9_16_v02 \
+Cs_Low_Det9_16_v03 \
+Cs_AmBe_Det9_16 \
+Cs_Eu152_Det9_16 \
+">>$Arguments
 
 
 

@@ -1,7 +1,7 @@
 # Simple HTCondor submit description file
 # Everything with a leading # is a comment
  
-executable   = /afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/Make2DHistos/Merge2DHistos
+executable   = /afs/cern.ch/user/v/valcayne/Workspace/2026_LaBr/Make2DHistos/Merge2DHistos
 arguments    = $(run)
 #output       = outputs_condor/DTAnalyzer01_$(EXTRRun)_$(RAWRun)_det$(DetN)_$(Quant)_$(nEn)_$(nE1).out
 output       = Condor/outputs/output_$(run).out
