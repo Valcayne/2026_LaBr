@@ -4,51 +4,13 @@
 Arguments=Condor/Inputs/ArgumentsForCondorMerge2DHistos.txt
 rm $Arguments
 
-echo -e " \n
-Cs_1 \n
-Background_1 \n
-Cs_2 \n
-Cs_3 \n
-Cs_4 \n
-Cs137_Det1_8 \n
-AmBe_Det1_8 \n
-Background_Det1_8 \n
-Co60_Det1_8 \n
-Eu155_Det1_8 \n
-Co60_Det1_8_v02 \n
-Background_Det1_8_v02 \n
-Cs137_Det1_8_17 \n
-Eu152_Det1_8_17 \n
-Co60_Det8_17 \n
-Cs_Low_Det1_8 \n
-Background_Det1_8 \n
-Cs_15cm_Det1_8 \n
-Cs_30cm_Det1_8 \n
-Cs_60cm_Det1_8 \n
-Cs_5cm_Det1_8 \n
-Cs_Low_Det1_8_v02 \n
-Cs_Low_Det1_8_-20 \n
-Cs_15cm_Det1_8_-20 \n
-Cs_30cm_Det1_8_-20 \n
-Cs_5cm_Det1_8_-20 \n
-Cs_Low_Det1_8_-20_v02 \n
-Cs_Low_Det1_8_-20_v03 \n
-Cs_Low_Det1_8_+20 \n
-Cs_Low_Det1_8_+20_v02 \n
-Cs_15cm_Det1_8_+20 \n
-Cs_30cm_Det1_8_+20 \n
-Cs_5cm_Det1_8_+20 \n
-Cs_Low_Det1_8_+20_v03 \n
-Cs_Low_Det9_16_SettingVoltage \n
-Cs_Low_Det9_16 \n
-Cs_15cm_Det9_16 \n
-Cs_30cm_Det9_16 \n
-Cs_5cm_Det9_16 \n
-Cs_Low_Det9_16_v02 \n
-Cs_Low_Det9_16_v03 \n
-Cs_AmBe_Det9_16 \n
-Cs_Eu152_Det9_16 \n
-">>$Arguments
+echo -e " \n Cs_1 \n Background_1 \n Cs_2 \n Cs_3 \n Cs_4 \n Cs137_Det1_8 \n AmBe_Det1_8 \n Background_Det1_8 \n Co60_Det1_8 \n Eu155_Det1_8 \n Co60_Det1_8_v02 ">>$Arguments
+echo -e "  \n Background_Det1_8_v02 \n Cs137_Det1_8_17 \n Eu152_Det1_8_17 \n Co60_Det8_17 \n Cs_Low_Det1_8 \n Background_Det1_8 \n Cs_15cm_Det1_8 \n Cs_30cm_Det1_8 ">>$Arguments
+echo -e " \n Cs_60cm_Det1_8 \n Cs_5cm_Det1_8 \n Cs_Low_Det1_8_v02 \n Cs_Low_Det1_8_-20 \n Cs_15cm_Det1_8_-20 \n Cs_30cm_Det1_8_-20 \n Cs_5cm_Det1_8_-20 \n Cs_Low_Det1_8_-20_v02">>$Arguments
+ echo -e " \n Cs_Low_Det1_8_-20_v03 \n Cs_Low_Det1_8_+20 \n Cs_Low_Det1_8_+20_v02 \n Cs_15cm_Det1_8_+20 \n Cs_30cm_Det1_8_+20 \n Cs_5cm_Det1_8_+20 \n Cs_Low_Det1_8_+20_v03 ">>$Arguments
+echo -e "  \n Cs_Low_Det9_16_SettingVoltage \n Cs_Low_Det9_16 \n Cs_15cm_Det9_16 \n Cs_30cm_Det9_16 \n Cs_5cm_Det9_16 \n Cs_Low_Det9_16_v02 \n Cs_Low_Det9_16_v03 \n ">>$Arguments
+echo -e "  Cs_AmBe_Det9_16 \n Cs_Eu152_Det9_16 \n">>$Arguments
+
 
 
 
