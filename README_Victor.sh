@@ -39,6 +39,79 @@ done
 more ${PathCalibrations}/Calib_${RunMax}.dat
 
 
+#922894
+RunMin=922894
+RunMax=922904
+PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_922894_v01.dat
+
+for (( number=$RunMin; number<=$RunMax; number++ )); do
+echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
+ cp ${PathCalibrationsInitial}  ${PathCalibrations}/Calib_${number}.dat
+done
+more ${PathCalibrations}/Calib_${RunMax}.dat
+
+
+
+#922905
+RunMin=922905
+RunMax=922910
+PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_922905_v01.dat
+
+for (( number=$RunMin; number<=$RunMax; number++ )); do
+echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
+ cp ${PathCalibrationsInitial}  ${PathCalibrations}/Calib_${number}.dat
+done
+more ${PathCalibrations}/Calib_${RunMax}.dat
+
+
+
+
+
+#922911
+RunMin=922911
+RunMax=922917
+PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_922911_v01.dat
+
+for (( number=$RunMin; number<=$RunMax; number++ )); do
+echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
+ cp ${PathCalibrationsInitial}  ${PathCalibrations}/Calib_${number}.dat
+done
+more ${PathCalibrations}/Calib_${RunMax}.dat
+
+
+
+
+#922929
+RunMin=922922
+RunMax=922931
+PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_922929_v01.dat
+
+for (( number=$RunMin; number<=$RunMax; number++ )); do
+echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
+ cp ${PathCalibrationsInitial}  ${PathCalibrations}/Calib_${number}.dat
+done
+more ${PathCalibrations}/Calib_${RunMax}.dat
+
+
+
+
+
+RunMin=
+RunMax=
+PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_v01.dat
+
+for (( number=$RunMin; number<=$RunMax; number++ )); do
+echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
+ cp ${PathCalibrationsInitial}  ${PathCalibrations}/Calib_${number}.dat
+done
+more ${PathCalibrations}/Calib_${RunMax}.dat
+
+
+
+
+
+
+
 #################################
 ## Create all the 2DHistos 
 cd Make2DHistos

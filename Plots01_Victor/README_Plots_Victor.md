@@ -37,6 +37,14 @@ plot2D({"Edep"},{"Cs_Low_Det1_8_+20","Cs_15cm_Det1_8_+20","Cs_30cm_Det1_8_+20","
 
 
 
+plot2D({"Edep"},{"Cs_Low_Det9_16","Cs_15cm_Det9_16","Cs_30cm_Det9_16","Cs_5cm_Det9_16","Cs_Low_Det9_16_v02"}, {9},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det9")
+plot2D({"Edep"},{"Cs_Low_Det9_16","Cs_15cm_Det9_16","Cs_30cm_Det9_16","Cs_5cm_Det9_16","Cs_Low_Det9_16_v02"}, {10},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det10")
+plot2D({"Edep"},{"Cs_Low_Det9_16","Cs_15cm_Det9_16","Cs_30cm_Det9_16","Cs_5cm_Det9_16","Cs_Low_Det9_16_v02"}, {11},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det11")
+plot2D({"Edep"},{"Cs_Low_Det9_16","Cs_15cm_Det9_16","Cs_30cm_Det9_16","Cs_5cm_Det9_16","Cs_Low_Det9_16_v02"}, {12},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det12")
+plot2D({"Edep"},{"Cs_Low_Det9_16","Cs_15cm_Det9_16","Cs_30cm_Det9_16","Cs_5cm_Det9_16","Cs_Low_Det9_16_v02"}, {13},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det13")
+plot2D({"Edep"},{"Cs_Low_Det9_16","Cs_15cm_Det9_16","Cs_30cm_Det9_16","Cs_5cm_Det9_16","Cs_Low_Det9_16_v02"}, {14},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det14")
+plot2D({"Edep"},{"Cs_Low_Det9_16","Cs_15cm_Det9_16","Cs_30cm_Det9_16","Cs_5cm_Det9_16","Cs_Low_Det9_16_v02"}, {15},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det15")
+plot2D({"Edep"},{"Cs_Low_Det9_16","Cs_15cm_Det9_16","Cs_30cm_Det9_16","Cs_5cm_Det9_16","Cs_Low_Det9_16_v02"}, {16},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det16")
 
 
 
@@ -48,6 +56,11 @@ plot2D({"Edep"},{"Cs_Low_Det1_8_+20","Cs_15cm_Det1_8_+20","Cs_30cm_Det1_8_+20","
 
 
  Merge2DHistos Cs_Low_Det1_8_+20; Merge2DHistos Cs_15cm_Det1_8_+20; Merge2DHistos Cs_30cm_Det1_8_+20; Merge2DHistos Cs_5cm_Det1_8_+20; Merge2DHistos Cs_Low_Det1_8_+20_v02; Merge2DHistos Cs_Low_Det1_8_+20_v03
+
+
+ Merge2DHistos Cs_Low_Det9_16; Merge2DHistos Cs_15cm_Det9_16; Merge2DHistos Cs_30cm_Det9_16; Merge2DHistos Cs_5cm_Det9_16; Merge2DHistos Cs_Low_Det9_16_v02; Merge2DHistos Cs_Low_Det9_16_v03
+
+
 
 
 This document describes the inputs and usage of the `plot2D` function for plotting 2D histograms.
