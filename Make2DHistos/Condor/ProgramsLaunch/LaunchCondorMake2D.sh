@@ -1,7 +1,7 @@
 # Simple HTCondor submit description file
 # Everything with a leading # is a comment
  
-executable   = /afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/Make2DHistos/Make2DHistos
+executable   = /afs/cern.ch/user/v/valcayne/Workspace/2026_LaBr/Make2DHistos/Make2DHistos
 arguments    = $(run)
 #output       = outputs_condor/DTAnalyzer01_$(EXTRRun)_$(RAWRun)_det$(DetN)_$(Quant)_$(nEn)_$(nE1).out
 output       = Condor/outputs/output_$(run).out
@@ -16,4 +16,4 @@ requirements = (OpSysAndVer =?= "AlmaLinux9")
 +JobFlavour = "longlunch"
 
 
-queue run from /afs/cern.ch/user/v/valcayne/Workspace/2026_Sm/Make2DHistos/Condor/Inputs/ArgumentsForCondor2DHisto.txt
+queue run from /afs/cern.ch/user/v/valcayne/Workspace/2026_LaBr/Make2DHistos/Condor/Inputs/ArgumentsForCondor2DHisto.txt
