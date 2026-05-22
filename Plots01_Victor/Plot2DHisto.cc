@@ -343,7 +343,7 @@ void plot2D(std::vector<string> NameHisto, std::vector<string> MeasurementType,
             h1[i]->Integral(h1[i]->FindBin(0.15), h1[i]->FindBin(20));
         cout << "CR" << TitleLegend[i] << " threshold 0.15 MeV Det" << detN[i]
              << " " << CRDet << endl;
-        if (!IfNormalize) {
+        if (IfNormalize) {
           TitleLegend[i] = TitleLegend[i] +
                            " CR=" + doubleToDecimalString(CRDet, 3) + " c/#mus";
         }
@@ -541,15 +541,15 @@ void plot2D(std::vector<string> NameHisto, std::vector<string> MeasurementType,
 
       double shiftArray[NumberOfHisto];
       double shift;
-      // for (auto i = 1; i < NumberOfHisto; i++) {
-      //   h1GainShift[i] = CalculateBestShift(
-      //       shift, h1[0], h1[i], NormalizeMinEdep, NormalizeMaxEdep,
-      //       NumberIterations, MinShift, MaxShift);
-      //   shiftArray[i] = shift;
-      //   TitleLegend[i] =
-      //       TitleLegend[i] + " G=" + doubleToDecimalString(shiftArray[i], 3);
-      //   cout << TitleLegend[i] << " Shift= " << shiftArray[i] << endl;
-      // }
+      for (auto i = 1; i < NumberOfHisto; i++) {
+        h1GainShift[i] = CalculateBestShift(
+            shift, h1[0], h1[i], NormalizeMinEdep, NormalizeMaxEdep,
+            NumberIterations, MinShift, MaxShift);
+        shiftArray[i] = shift;
+        TitleLegend[i] =
+            TitleLegend[i] + " G=" + doubleToDecimalString(shiftArray[i], 3);
+        cout << TitleLegend[i] << " Shift= " << shiftArray[i] << endl;
+      }
     }
   }
 

@@ -1,49 +1,13 @@
 File with info
-Thu 21 May 2026 06:45:56 PM CEST
+Fri 22 May 2026 03:19:20 PM CEST
 
 Plot created in:
 /home/victor93/CmExperimentFolder/2026_LaBr/2026_LaBr/Plots01_Victor
 
 Last Root commands
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1_-20")
-.x Plot2DHisto.cc
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {2},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det2_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {3},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det3_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {4},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det4_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {5},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det5_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {6},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det6_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {7},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det7_-20")
-
-File with info
-Thu 21 May 2026 06:51:39 PM CEST
-
-Plot created in:
-/home/victor93/CmExperimentFolder/2026_LaBr/2026_LaBr/Plots01_Victor
-
-Last Root commands
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1_-20")
-.x Plot2DHisto.cc
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {2},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det2_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {3},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det3_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {4},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det4_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {5},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det5_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {6},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det6_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {7},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det7_-20")
-
-File with info
-Thu 21 May 2026 06:52:18 PM CEST
-
-Plot created in:
-/home/victor93/CmExperimentFolder/2026_LaBr/2026_LaBr/Plots01_Victor
-
-Last Root commands
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {8},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det8_-20")
-plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1_-20")
-.x Plot2DHisto.cc
+plot2D({"Edep"},{"Cs_Low_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {6},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det6")
+plot2D({"Edep"},{"Cs_Low_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {7},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det7")
+plot2D({"Edep"},{"Cs_Low_Det1_8","Cs_15cm_Det1_8","Cs_30cm_Det1_8","Cs_5cm_Det1_8","Cs_Low_Det1_8_v02"}, {8},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det8")
 plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {1},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det1_-20")
 plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {2},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det2_-20")
 plot2D({"Edep"},{"Cs_Low_Det1_8_-20","Cs_15cm_Det1_8_-20","Cs_30cm_Det1_8_-20","Cs_5cm_Det1_8_-20","Cs_Low_Det1_8_-20_v03","Cs_Low_Det1_8_-20_v03"}, {3},{0.15},{9.999}, {3}, "CR", {1},0,1,0,0,"ResultsPlot/Gain_Det3_-20")

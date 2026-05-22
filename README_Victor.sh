@@ -95,10 +95,10 @@ more ${PathCalibrations}/Calib_${RunMax}.dat
 
 
 
-
-RunMin=
-RunMax=
-PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_v01.dat
+#922933
+RunMin=922933
+RunMax=922938
+PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_922933_v01.dat
 
 for (( number=$RunMin; number<=$RunMax; number++ )); do
 echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
@@ -106,6 +106,17 @@ echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
 done
 more ${PathCalibrations}/Calib_${RunMax}.dat
 
+
+#922943
+RunMin=922939
+RunMax=922947
+PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_922943_v01.dat
+
+for (( number=$RunMin; number<=$RunMax; number++ )); do
+echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
+ cp ${PathCalibrationsInitial}  ${PathCalibrations}/Calib_${number}.dat
+done
+more ${PathCalibrations}/Calib_${RunMax}.dat
 
 
 

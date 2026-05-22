@@ -1242,8 +1242,8 @@ TH1D* CalculateBestShift(double& shift, TH1D* h1, TH1D* h2, double EminFit,
     h3 = Transform(h1, MinShift + (k * (MaxShift - MinShift) / Iterations));
     Chi2 = CompareHistograms(h2, h3, EminFit, EmaxFit);
 
-    cout << k << " " << MinShift + (k * (MaxShift - MinShift) / Iterations)
-         << " Chi2 " << Chi2 << endl;
+    // cout << k << " " << MinShift + (k * (MaxShift - MinShift) / Iterations)
+    //      << " Chi2 " << Chi2 << endl;
 
     if (Chi2 < BestFit) {
       BestFit = Chi2, BestFitk = k;
