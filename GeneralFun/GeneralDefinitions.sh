@@ -19,7 +19,7 @@ RunTypeToBeMerged="/eos/home-v/valcayne/CopiaOrdenadorCIEMAT/CmExperimentFolder/
 RunTypeTypeFolder="/eos/home-v/valcayne/CopiaOrdenadorCIEMAT/CmExperimentFolder/2026_LaBr/2026_LaBr/RunLists"
 
 
-PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_v01.dat
+PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_v02.dat
 PathCalibrations=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01
 PathCalibrationsGain=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunGainCorrectedv01
 PathGainMonitoring=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr//GainMonitoring/v01
