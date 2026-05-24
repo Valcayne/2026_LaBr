@@ -63,7 +63,7 @@ no se ha tenido en cuenta.
 //   ---------------------------- Plots01 --------------------------------
 
 string Direction2DHisto =
-    "../DatosEnDiscoDuro/2DHistos/v01GainCorrectedMerge/Histos01_";
+    "../DatosEnDiscoDuro/2DHistos/v02GainCorrectedMerge/Histos01_";
 
 // string Direction2DHisto = "../DatosEnDiscoDuro/2DHistos/v01Merge/Histos01_";
 //
@@ -81,10 +81,10 @@ string WFFile =
 //   ---------------------------- Make2DHisto --------------------------------
 char outdir[200] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/"
-    "v01/";
+    "v02/";
 char CalibDirName[200] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/"
-    "CalibrationRunByRunv01";
+    "CalibrationRunByRunv02";
 
 // char outdirGainCorrected[200] =
 //     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/"
@@ -93,15 +93,15 @@ char CalibDirName[200] =
 // I will not correct the gain
 char outdirGainCorrected[200] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/"
-    "v01/";
+    "v02/";
 
 char CalibDirNameGainCorrected[200] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/"
-    "CalibrationRunByRunGainCorrectedv01";
+    "CalibrationRunByRunGainCorrectedv02";
 
 // char EOSPATH[200] = "/eos/experiment/ntof/processing/official/done/";
 char EOSPATH[200] =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01/done";
+    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v02/done";
 
 char WFFolder[1000] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/WF/"
@@ -122,7 +122,7 @@ char RunListFnameLABR[1000] =
 
 char DirNameoutMerged[200] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/"
-    "v01GainCorrectedMerge";
+    "v02GainCorrectedMerge";
 
 //   ----------------------------
 //   MakeCalibration--------------------------------
