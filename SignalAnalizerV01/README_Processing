@@ -5,7 +5,7 @@
  explained here: https://twiki.cern.ch/twiki/bin/view/NTOF/Lxplus
 
 
-/eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c SINBA_BRAINS -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01 -p /afs/cern.ch/work/v/valcayne/2026_LaBr/SignalAnalizerV01/UserInput/UserInput_2026_LAB_LaBr_v01.sh -r 125274 -l 125277
+/eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c SINBA_BRAINS -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01 -p /afs/cern.ch/work/v/valcayne/2026_LaBr/SignalAnalizerV01/UserInput/UserInput_2026_LAB_LaBr_v01.sh -r 125279 -l 125283
 
 
 
