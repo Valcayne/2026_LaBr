@@ -50,21 +50,21 @@ int main(int argc, char** argv) {
 
   HistoInfo* HistoInfoSILI = new HistoInfo();
 
-  HistoInfoSILI->DetectorName = "SILI";
-  HistoInfoSILI->DetectorNumber = {0, 1, 2, 3, 4};
-  HistoInfoSILI->DetectorDeadTime_ns = {0, 0, 0, 0, 0};
+  // HistoInfoSILI->DetectorName = "SILI";
+  // HistoInfoSILI->DetectorNumber = {0, 1, 2, 3, 4};
+  // HistoInfoSILI->DetectorDeadTime_ns = {0, 0, 0, 0, 0};
 
-  HistoInfoSILI->HistoName.push_back("Edep");
-  HistoInfoSILI->HistoTitle.push_back("Edep");
-  HistoInfoSILI->HistoType.push_back(1);
-  HistoInfoSILI->Xaxis.push_back({1e1, 1.e-3, 1.e7});
-  HistoInfoSILI->Yaxis.push_back({2e4, 0, 1e5});
+  // HistoInfoSILI->HistoName.push_back("Edep");
+  // HistoInfoSILI->HistoTitle.push_back("Edep");
+  // HistoInfoSILI->HistoType.push_back(1);
+  // HistoInfoSILI->Xaxis.push_back({1e1, 1.e-3, 1.e7});
+  // HistoInfoSILI->Yaxis.push_back({2e4, 0, 1e5});
 
-  HistoInfoSILI->HistoName.push_back("En");
-  HistoInfoSILI->HistoTitle.push_back("En");
-  HistoInfoSILI->HistoType.push_back(1);
-  HistoInfoSILI->Xaxis.push_back({1e3, 1.e-3, 1.e7});
-  HistoInfoSILI->Yaxis.push_back({2e2, 0, 1e5});
+  // HistoInfoSILI->HistoName.push_back("En");
+  // HistoInfoSILI->HistoTitle.push_back("En");
+  // HistoInfoSILI->HistoType.push_back(1);
+  // HistoInfoSILI->Xaxis.push_back({1e3, 1.e-3, 1.e7});
+  // HistoInfoSILI->Yaxis.push_back({2e2, 0, 1e5});
 
   // HistoInfoSILI->HistoName.push_back("En_1000");
   // HistoInfoSILI->HistoTitle.push_back("En");
@@ -96,15 +96,16 @@ int main(int argc, char** argv) {
   HistoInfoLABR->HistoName.push_back("Edep");
   HistoInfoLABR->HistoTitle.push_back("Edep");
   HistoInfoLABR->HistoType.push_back(1);
-  HistoInfoLABR->Xaxis.push_back({100, 1.e-3, 1.e7});
+  HistoInfoLABR->Xaxis.push_back({110, 1.e-3, 1.e8});
   HistoInfoLABR->Yaxis.push_back({2e4, 0, 20});
   // HistoInfoLABR->Yaxis.push_back({2e4, 0, 2e4});
 
   HistoInfoLABR->HistoName.push_back("En");
   HistoInfoLABR->HistoTitle.push_back("En");
   HistoInfoLABR->HistoType.push_back(1);
-  HistoInfoLABR->Xaxis.push_back({1.8e5, 1.e-2, 1.e7});
-  HistoInfoLABR->Yaxis.push_back({0.1, 0.12, 0.15, 0.3, 0.5, 1, 10, 20});
+  HistoInfoLABR->Xaxis.push_back({1.9e5, 1.e-2, 1.e8});
+  HistoInfoLABR->Yaxis.push_back(
+      {0.1, 0.12, 0.15, 0.3, 0.4, 0.45, 0.5, 1, 10, 20});
 
   int const N_PULSETYPE = 4;  // All, Dedicated, Parasitic, Other
   //==============================================================================
