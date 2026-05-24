@@ -10,7 +10,7 @@ cp /eos/experiment/ntof/DAQ/2026/EAR1/SINBA_BRAINS/125277/stream1/run125277_7_s1
 SignalAnalyzer
 
 
-/eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c SINBA_BRAINS -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v02 -p  /eos/experiment/ntof/repositories/RAW2ROOT/UserInput/2026/UserInput_2026_EAR1_SINBA_BRAINS_LABR_v0.h -r 125277 -l 125292
+/eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c SINBA_BRAINS -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v02 -p  /eos/experiment/ntof/repositories/RAW2ROOT/UserInput/2026/UserInput_2026_EAR1_SINBA_BRAINS_LABR_v0.h -r 125290 -l 125299
 
 /eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c SINBA_BRAINS -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01 -p /afs/cern.ch/work/v/valcayne/2026_LaBr/SignalAnalizerV01/UserInput/UserInput_2026_LAB_LaBr_v01.sh -r 125277 -l 125285
 /eos/experiment/ntof/repositories/processingscripts/RunProcessing.sh -y 2026 -a EAR1 -c SINBA_BRAINS -o /eos/user/v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v02 -p /afs/cern.ch/work/v/valcayne/2026_LaBr/SignalAnalizerV01/UserInput/UserInput_2026_LaBr_v02.hh -r 125277 -l 125292

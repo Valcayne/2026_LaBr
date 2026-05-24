@@ -7,8 +7,8 @@ RunMin=125277
 RunMax=125400
 
 
-#EOSPATH="/eos/experiment/ntof/processing/official/done/"
-EOSPATH="/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v02/done"
+EOSPATH="/eos/experiment/ntof/processing/official/done/"
+#EOSPATH="/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v02/done"
 
 
 Folder2D="/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/v02"
