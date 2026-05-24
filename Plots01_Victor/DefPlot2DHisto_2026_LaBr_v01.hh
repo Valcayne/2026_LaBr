@@ -250,7 +250,7 @@ double NormalizeMaxEn = 1000;
 //   double ForPlotEminEn = 0.02;
 //   double ForPlotEmaxEn = 1e6;
 double ForPlotEminEn = 2e-2;
-double ForPlotEmaxEn = 1e6;
+double ForPlotEmaxEn = 1e8;
 //    double ForPlotEminEn = 3;
 // double ForPlotEmaxEn = 7;
 // Edep for integrals normalize
