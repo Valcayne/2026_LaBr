@@ -8,11 +8,11 @@ RunMax=125400
 
 
 #EOSPATH="/eos/experiment/ntof/processing/official/done/"
-EOSPATH="/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v01/done"
+EOSPATH="/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/v02/done"
 
 
-Folder2D="/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/v01"
-Folder2DGainCorrected="/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/v01GainCorrected"
+Folder2D="/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/v02"
+Folder2DGainCorrected="/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/2DHistos/v02GainCorrected"
 FolderOnLXPLUS="/afs/cern.ch/user/v/valcayne/Workspace/2026_LaBr/"
 
 RunTypeToBeMerged="/eos/home-v/valcayne/CopiaOrdenadorCIEMAT/CmExperimentFolder/2026_LaBr/2026_LaBr/RunLists/RunTypeToBeMerged_v01.txt"
@@ -20,8 +20,8 @@ RunTypeTypeFolder="/eos/home-v/valcayne/CopiaOrdenadorCIEMAT/CmExperimentFolder/
 
 
 PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_v03.dat
-PathCalibrations=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01
-PathCalibrationsGain=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunGainCorrectedv01
+PathCalibrations=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv02
+PathCalibrationsGain=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunGainCorrectedv02
 PathGainMonitoring=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr//GainMonitoring/v01
 
 RefRunGainShift_SILI=124096
