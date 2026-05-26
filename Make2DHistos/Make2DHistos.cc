@@ -105,7 +105,7 @@ int main(int argc, char** argv) {
   HistoInfoLABR->HistoType.push_back(1);
   HistoInfoLABR->Xaxis.push_back({1.9e5, 1.e-2, 1.e8});
   HistoInfoLABR->Yaxis.push_back(
-      {0.1, 0.12, 0.15, 0.3, 0.4, 0.45, 0.5, 1, 10, 20});
+      {0.1, 0.12, 0.15, 0.3, 0.4, 0.45, 0.5, 0.55, 1, 1.5, 2.0, 5, 10, 20});
 
   int const N_PULSETYPE = 4;  // All, Dedicated, Parasitic, Other
   //==============================================================================
