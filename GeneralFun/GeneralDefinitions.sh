@@ -3,8 +3,8 @@
 #Define the location of the files for bash programs
 
 
-RunMin=125277
-RunMax=125400
+RunMin=126018
+RunMax=126100
 
 
 #EOSPATH="/eos/experiment/ntof/processing/official/done/"
