@@ -6,10 +6,13 @@ rm $Arguments
 
 echo -e "May_Eu152_20cm_v01 \n May_Cs137_20cm_v01 \n May_Si28_20cm \n May_Eu152_v02 \n May_Y88_v02 \n May_Si28 \n May_Background_v02 \n May_Si28 \">>$Arguments
 echo -e "May_Background_v03 \n May_Y88_v03 \n May_Cs137_v03 \n May_B10_250um \n May_B10_1000um ">>$Arguments
-echo -e " Eu152_v01 \n Y88_v01 \n B10 \n Eu152_v02 \n Background_v02 ">>$Arguments
+echo -e " Eu152_v01 \n Y88_v01 \n B10 \n Eu152_v02 \n Background_v02">>$Arguments
 echo -e "Cs137_v03 \n Y88_v03 \n Bi207_v03 \n Co60_v03">>$Arguments
+
+
+###
 #echo -e "Cs_1 \n Background_1 \n Cs_2 \n Cs_3 \n Cs_4 \n Cs137_Det1_8 \n AmBe_Det1_8 \n Background_Det1_8 \n Co60_Det1_8 \n Eu155_Det1_8 \n Co60_Det1_8_v02 ">>$Arguments
-#echo -e "  \n Background_Det1_8_v02 \n Cs137_Det1_8_17 \n Eu152_Det1_8_17 \n Co60_Det8_17 \n 
+#echo -e "Background_Det1_8_v02 \n Cs137_Det1_8_17 \n Eu152_Det1_8_17 \n Co60_Det8_17 \n 
 #
 #echo -e "Cs_Low_Det1_8 \n Background_Det1_8 \n Cs_15cm_Det1_8 \n Cs_30cm_Det1_8 echo -e " \n Cs_60cm_Det1_8 \n Cs_5cm_Det1_8 \n Cs_Low_Det1_8_v02 ">>$Arguments
 #echo -e "Cs_Low_Det1_8_-20 \n Cs_15cm_Det1_8_-20 \n Cs_30cm_Det1_8_-20 \n Cs_5cm_Det1_8_-20 \n Cs_Low_Det1_8_-20_v02 \n Cs_Low_Det1_8_-20_v03">>$Arguments
