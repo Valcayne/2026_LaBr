@@ -71,8 +71,8 @@ int main(int argc, char** argv) {
   HistoInfos->back().HistoName.push_back("Edep");
   HistoInfos->back().HistoTitle.push_back("Edep");
   HistoInfos->back().HistoType.push_back(1);
-  HistoInfos->back().Xaxis.push_back({110, 1.e-3, 1.e8});
-  HistoInfos->back().Yaxis.push_back({4e3, 0, 20});  /// dive b y 5
+  HistoInfos->back().Xaxis.push_back({1.1e2, 1.e-3, 1.e8});
+  HistoInfos->back().Yaxis.push_back({1e4, 0, 10});  /// dive b y 5
   // HistoInfos->back().Yaxis.push_back({2e4, 0, 2e4});
 
   HistoInfos->back().HistoName.push_back("En");
