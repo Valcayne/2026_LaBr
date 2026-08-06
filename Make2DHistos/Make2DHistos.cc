@@ -232,7 +232,7 @@ int main(int argc, char** argv) {
           CreateBunchesIndex(trees[i], bunchesIndex[i], BunchNumber[i]);
 
       // Asociar la estructura Signal
-      AttachStruct(&theSignals[i], trees[i], info.UseAreaInsteadOfAmplitude;);
+      AttachStruct(&theSignals[i], trees[i], info.UseAreaInsteadOfAmplitude);
 
       // Crear array dinámico de señales
       theSignalsArray[i] = new Signal[MAXNSIGNALSINPULSE];
