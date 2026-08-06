@@ -135,13 +135,15 @@ more ${PathCalibrations}/Calib_${RunMax}.dat
 #V01
 RunMin=126018
 RunMax=126500
-PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_922943_v01.dat
+PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_126018_v01.dat
 
 for (( number=$RunMin; number<=$RunMax; number++ )); do
 echo "  cp ${PathCalibrationsInitial} ${PathCalibrations}/Calib_${number}.dat "
  cp ${PathCalibrationsInitial}  ${PathCalibrations}/Calib_${number}.dat
 done
 more ${PathCalibrations}/Calib_${RunMax}.dat
+
+
 
 
 
