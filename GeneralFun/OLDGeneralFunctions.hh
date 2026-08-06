@@ -660,9 +660,9 @@ void TakePKUPInfo(const char* fname, PKUPInfo* thePKUPInfo) {
   TTree* tr = (TTree*)f1->Get("PKUP");
 
   if (tr == 0) {
-    cout << " ######## Error getting PKUP from so we would use C6D6 as PKUP"
+    cout << " ######## Error getting PKUP from so we would use LABR as PKUP"
          << fname << " ###########" << endl;
-    tr = (TTree*)f1->Get("C6D6");
+    tr = (TTree*)f1->Get("LABR");
     thePKUPInfo->npulses = tr->GetMaximum("BunchNumber");
     thePKUPInfo->np1 = 0;
     thePKUPInfo->np2 = 0;
@@ -943,12 +943,6 @@ double TOFtoE(double tof, double tofd) {
   double n_energy = 0.;
   double cx = 0.;
   double tflash = 0.;
-  if (tofd < 1) {
-    cout << " ####### Error in " << __FILE__ << ", line " << __LINE__
-         << " #######" << endl;
-    cout << " tof " << tof << " tofd " << tofd << endl;
-    exit(1);
-  }
 
   tflash = tofd / 299792458. * 1.e9;
   beta = (double)tofd * 1.e9 / (tof + tflash) / 299792458.;

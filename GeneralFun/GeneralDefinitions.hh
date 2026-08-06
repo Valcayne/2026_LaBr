@@ -174,7 +174,7 @@ TColor* color19 = new TColor(10019, 0.68, 0.74, 0.78);
 TColor* color20 = new TColor(10020, 0.5, 0.5, 0.61);
 // =====================================================================
 
-#define NDetectorMAX 15  // this is the maximum number of detectors of one typw
+#define NDetectorMAX 28  // this is the maximum number of detectors of one typw
 
 // =====================================================================
 //   ------------------------------ TAC --------------------------------
@@ -187,13 +187,20 @@ TColor* color20 = new TColor(10020, 0.5, 0.5, 0.61);
 #define MAXNBUNCHESINFILE 100000
 #define MAXNSIGNALSINPULSE 1000000
 // #define MAXNEVENTSINPULSE 1000000
+#define MAXNEVENTSINPULSE 1000000
+
 //  =====================================================================
 
 struct HistoInfo {
   string DetectorName;
+  double CoincidenceWindow;
+  //  double TimeOfFlightDistance;
+
   std::vector<int> DetectorNumber;
   std::vector<string> HistoName;
   std::vector<string> HistoTitle;
+  std::vector<string> HistoCoincidenceName;
+
   std::vector<double> DetectorDeadTime_ns;
   std::vector<int> HistoType;
   std::vector<vector<double>> Xaxis;
@@ -203,12 +210,27 @@ struct HistoInfo {
 struct Signal {
   int RunNumber, BunchNumber, date, detn, time, PSpulse, isAlpha, movie;
   double edep, tof, tflash, eNeutron, tofPreviousSignal, edepPreviousSignal,
-      weight;
+      weight, tofdistance;
   float amp, area, fwhm, fwtm, area_0, amp_0, area2, PulseIntensity, afast,
       aslow, Tau;
   string DetName;
 };
-
+struct Event {
+  int mult;
+  double esum, tof, eNeutron, weight;
+  int CoincFlag;
+};
+struct FullEvent {
+  int RunNumber, PType, SILIcounts;  // PType es el correspondiente después de
+                                     // aplicar los cortes con el PKUP
+  float PulseIntensity;
+  int mult;
+  double tof, eNeutron, weight;
+  double esum;
+  double EdepDet[NDetectorMAX];
+  double TofDet[NDetectorMAX];
+  double WeightDet[NDetectorMAX];
+};
 struct PKUPInfo {
   int npulses;
   int np1, np2, np3;                    // dedicated,parasitic,other
@@ -222,5 +244,12 @@ struct PKUPInfo {
   double PKUPArea[MAXNBUNCHESINFILE];
   double PKUPTflash[MAXNBUNCHESINFILE];
 };
+int TOFComparison(const void* va, const void* vb) {
+  Signal *a, *b;
+  a = (Signal*)va;
+  b = (Signal*)vb;
+  if (a->tof == b->tof) return 0;
+  return ((a->tof) > (b->tof)) ? 1 : -1;
+}
 
 #endif
