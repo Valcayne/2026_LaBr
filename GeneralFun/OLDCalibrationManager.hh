@@ -345,17 +345,9 @@ CalibrationManager::CalibrationManager(const char* calibdirname,
       in >> theCP.DetID >> theCP.TOFD >> theCP.p0 >> theCP.p1 >> theCP.p2 >>
           theCP.p3 >> theCP.p4 >> theCP.p5 >> theCP.p6 >> theCP.EneMin >>
           theCP.EneMax >> theCP.dum1 >> theCP.dum2 >> theCP.t0 >> theCP.t1;
-      // PRINT DEBUG INFO
-      cout << "Detector: " << theCP.DetectorName << " ID: " << theCP.DetID
-           << " TOFD: " << theCP.TOFD << " p0-p6: " << theCP.p0 << " "
-           << theCP.p1 << " " << theCP.p2 << " " << theCP.p3 << " " << theCP.p4
-           << " " << theCP.p5 << " " << theCP.p6 << " EneMin: " << theCP.EneMin
-           << " EneMax: " << theCP.EneMax << " t0: " << theCP.t0
-           << " t1: " << theCP.t1 << endl;
       theCalibParams.push_back(theCP);
     }
   }
-
   in.close();
 
   // cout << " ... done" << endl;
