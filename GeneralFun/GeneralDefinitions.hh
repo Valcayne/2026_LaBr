@@ -195,6 +195,7 @@ struct HistoInfo {
   string DetectorName;
   double CoincidenceWindow;
   //  double TimeOfFlightDistance;
+  bool UseAreaInsteadOfAmplitude;
 
   std::vector<int> DetectorNumber;
   std::vector<string> HistoName;

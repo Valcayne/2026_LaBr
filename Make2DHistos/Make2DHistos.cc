@@ -60,6 +60,7 @@ int main(int argc, char** argv) {
   // Define C6D6
   HistoInfos->emplace_back();
   HistoInfos->back().DetectorName = "LABR";
+  HistoInfos->back().UseAreaInsteadOfAmplitude = {true};  // in ns
 
   HistoInfos->back().DetectorNumber = {0,  1,  2,  3,  4,  5,  6,  7,  8, 9,
                                        10, 11, 12, 13, 14, 15, 16, 17, 18};
@@ -86,6 +87,7 @@ int main(int argc, char** argv) {
   HistoInfos->back().DetectorName = "FC-U";
   HistoInfos->back().DetectorNumber = {0, 1, 2, 3, 4, 5, 6, 7};
   HistoInfos->back().DetectorDeadTime_ns = {0, 0, 0, 0, 0, 0, 0, 0};
+  HistoInfos->back().UseAreaInsteadOfAmplitude = {false};  //
 
   HistoInfos->back().HistoName.push_back("Edep");
   HistoInfos->back().HistoTitle.push_back("Edep");
@@ -108,6 +110,7 @@ int main(int argc, char** argv) {
       2,
   };
   HistoInfos->back().DetectorDeadTime_ns = {0, 0, 0};
+  HistoInfos->back().UseAreaInsteadOfAmplitude = {false};  //
 
   HistoInfos->back().HistoName.push_back("Edep");
   HistoInfos->back().HistoTitle.push_back("Edep");
