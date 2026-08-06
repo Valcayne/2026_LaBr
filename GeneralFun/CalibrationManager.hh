@@ -202,6 +202,8 @@ double CalibrationManager::TakeEnergy(Signal* P) {
     //    << endl;
   }
   if (!found) {
+    cout << "DetName " << DetName << " DetN " << DetN << " Amplitude "
+         << Amplitude << endl;
     cout << " ############# ERROR in " << __FILE__ << ", line " << __LINE__
          << " #############" << endl;
     exit(1);
