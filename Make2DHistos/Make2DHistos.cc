@@ -79,8 +79,9 @@ int main(int argc, char** argv) {
   HistoInfos->back().HistoTitle.push_back("En");
   HistoInfos->back().HistoType.push_back(1);
   HistoInfos->back().Xaxis.push_back({1.9e5, 1.e-2, 1.e8});
-  HistoInfos->back().Yaxis.push_back(
-      {0.1, 0.12, 0.15, 0.3, 0.4, 0.45, 0.5, 0.55, 1, 1.5, 2.0, 5, 10, 20});
+  HistoInfos->back().Yaxis.push_back({0.1, 0.12, 0.15, 0.3, 0.4, 0.45, 0.48,
+                                      0.5, 0.51, 0.53, 0.55, 1, 1.5, 2.0, 5, 10,
+                                      20});
 
   // Define FC-U
   HistoInfos->emplace_back();

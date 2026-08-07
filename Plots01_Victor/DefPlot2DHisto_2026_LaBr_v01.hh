@@ -37,22 +37,22 @@ double FactorToMultyplySiliCountsToProtons =
 
 double TOFD = 183.88;
 // For subtract backgroudnSasd
-vector<string> MeasPredefined = {
-    "Predefined",
-};
-vector<string> BackgroundMeasPredefined = {"Background_Det1_8"};
-vector<string> DummyPredefined = {"Empty"};
-vector<string> BackgroundDummyPredefined = {"Background_Det1_8"};
+vector<string> MeasPredefined = {"Predefined", "B10"};
+vector<string> BackgroundMeasPredefined = {"Background_Det1_8",
+                                           "Background_v02"};
+vector<string> DummyPredefined = {"Empty", "B10"};
+vector<string> BackgroundDummyPredefined = {"Background_Det1_8",
+                                            "Background_v02"};
 
 // For GetSimul
 vector<string> NameSimulArray = {
-    "Au25",        "Au_40_200",  "Ar",          "EmptyCapsule", "Pb-20-21",
+    "Au25",        "B10",        "Ar",          "EmptyCapsule", "Pb-20-21",
     "Au-40-100",   "SbNat",      "Sb121",       "Sb123",        "Er164_Thick",
     "Er164_Thin",  "SmNat_5um",  "SmNat_Thick", "Sm147_Thick",  "Sm149_Thick",
     "Sm152_Thick", "SmNat_Thick"};
 vector<string> NameSimulRootfile = {
     "DataPlot/Yield_Sn_Au_645mg_radius1",
-    "DataPlot/Yield_Au_2_200",
+    "DataPlot/Yield_B10_NoRF_v01",
     " DataPlot/Yield_Ar40_ENDF80_v01",
     "DataPlot/Yield_Ar40_ENDF80_v01",
     "DataPlot/Yield_Pb_2cm_7g",
@@ -71,8 +71,8 @@ vector<string> NameSimulRootfile = {
 
 vector<vector<string>> NameSimulRootfile2 = {
     // Vector 0
-    {"-1", "DataPlot/Yield_Au_2_200", "DataPlot/Yield_Ar40_ENDF80_v01",
-     "DataPlot/Ar-40Pre", "DataPlot/Yield_Pb_2cm_7g", "DataPlot/Yield_Au_2_100",
+    {"-1", "-1", "DataPlot/Yield_B10_NoRF_v01", "DataPlot/Ar-40Pre",
+     "DataPlot/Yield_Pb_2cm_7g", "DataPlot/Yield_Au_2_100",
      "DataPlot/Yield_SbNat_574mg", "DataPlot/Yield_Sb121_839mg",
      "DataPlot/Yield_Sb123_1091mg", "DataPlot/Yield_Er164_217mg_v01_Er162",
      "DataPlot/Yield_Er164_44.53mg_Er164",

@@ -92,7 +92,7 @@ void plot2D(std::vector<string> NameHisto, std::vector<string> MeasurementType,
   string fname;
   TH1D* hSimul;
   TH1D* hSimul2[10];
-  int const hSimul2Size = 7;
+  int const hSimul2Size = 1;
 
   bool SubtractBackground = false;
   double Used_PType[NumberOfHisto];
@@ -355,8 +355,10 @@ void plot2D(std::vector<string> NameHisto, std::vector<string> MeasurementType,
       }
     } else if (TypeOfPlot == "Yield_Sn_25mm") {
       h1[i]->Scale(7.e12 / nprotons[i]);
-      DivideByNeutronFluence_iso_AllYears(
-          h1[i], "Flux_26_AllRuns_NoFilters_Until124680");
+      // DivideByNeutronFluence_iso_AllYears(
+      //     h1[i], "Flux_26_AllRuns_NoFilters_Until124680");
+      DivideByNeutronFluence_iso_AllYears(h1[i], "h1");
+
       h1[i]->Scale(1.0 / 4.0);  // Because I use the 4 detectors
       h1[i]->Scale(
           1.0 /
@@ -393,7 +395,7 @@ void plot2D(std::vector<string> NameHisto, std::vector<string> MeasurementType,
         h1[i]->GetYaxis()->SetTitle(" Flux_{SILI}/Flux_{Eval}");
       } else {
         h1[i]->Scale(7.e12 / nprotons[i]);
-        DivideByNeutronFluence_iso_2023(h1[i]);
+        DivideByNeutronFluence_iso_AllYears(h1[i], "h1");
         // DivideByNeutronFluence_iso_2024(h1[i]);
 
         h1[i]->GetYaxis()->SetTitle("Yield* ");
