@@ -99,9 +99,9 @@ char CalibDirNameGainCorrected[200] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/"
     "CalibrationRunByRunGainCorrectedv02";
 
-// char EOSPATH[200] = "/eos/experiment/ntof/processing/official/done/";
-char EOSPATH[200] =
-    "/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/MichiData/";
+char EOSPATH[200] = "/eos/experiment/ntof/processing/official/done/";
+// char EOSPATH[200] =
+"/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/RootFiles/MichiData/";
 
 char WFFolder[1000] =
     "/eos/home-v/valcayne/nTOFDataProcessing/2024_Er_Cu_U/Calibration/WF/"
