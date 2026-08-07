@@ -4,8 +4,8 @@
 Arguments=Condor/Inputs/ArgumentsForCondorMerge2DHistos.txt
 rm $Arguments
 
-echo -e "May_Eu152_20cm_v01 \n May_Cs137_20cm_v01 \n May_Si28_20cm \n May_Eu152_v02 \n May_Y88_v02 \n May_Si28 \n May_Background_v02 \n May_Si28 \">>$Arguments
-echo -e "May_Background_v03 \n May_Y88_v03 \n May_Cs137_v03 \n May_B10_250um \n May_B10_1000um ">>$Arguments
+#echo -e "May_Eu152_20cm_v01 \n May_Cs137_20cm_v01 \n May_Si28_20cm \n May_Eu152_v02 \n May_Y88_v02 \n May_Si28 \n May_Background_v02 \n May_Si28 \">>$Arguments
+#echo -e "May_Background_v03 \n May_Y88_v03 \n May_Cs137_v03 \n May_B10_250um \n May_B10_1000um ">>$Arguments
 echo -e " Eu152_v01 \n Y88_v01 \n B10 \n Eu152_v02 \n Background_v02">>$Arguments
 echo -e "Cs137_v03 \n Y88_v03 \n Bi207_v03 \n Co60_v03">>$Arguments
 
