@@ -4,7 +4,7 @@
 
 
 RunMin=126018
-RunMax=126100
+RunMax=126200
 
 
 EOSPATH="/eos/experiment/ntof/processing/official/done/"

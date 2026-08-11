@@ -134,7 +134,7 @@ more ${PathCalibrations}/Calib_${RunMax}.dat
 
 #V01
 RunMin=126018
-RunMax=126500
+RunMax=126200
 PathCalibrationsInitial=/eos/home-v/valcayne/nTOFDataProcessing/2026_LaBr/Calibration/CalibrationRunByRunv01/Calib_2026_LaBr_126018_v01.dat
 
 for (( number=$RunMin; number<=$RunMax; number++ )); do
